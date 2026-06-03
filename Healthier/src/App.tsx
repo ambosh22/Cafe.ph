@@ -1,21 +1,30 @@
 import { useState, useCallback, useEffect, useMemo, useRef } from "react";
 import MapView from "./components/MapView";
 import LocationCard from "./components/LocationCard";
-import DirectionsPanel from "./components/DirectionsPanel";
 import { type Location } from "./data/locations";
-import { fetchAllLocations, loadLocationsInRegion } from "./data/fetchLocations";
-import { fetchRoute, type RouteData } from "./data/routing";
+import { fetchAllLocations } from "./data/fetchLocations";
 import { getDistance, formatDistance, renderRating, isOpenNow } from "./data/utils";
 import coffeeLogo from "./assets/coffee.png";
 import "./App.css";
-
-type SortMode = "distance" | "rating" | "name";
 
 function loadFavorites(): Set<number> {
   try {
     const raw = localStorage.getItem("brew_favorites");
     return new Set(raw ? JSON.parse(raw) : []);
   } catch { return new Set(); }
+}
+
+function loadWantToTry(): Set<number> {
+  try {
+    const raw = localStorage.getItem("brew_wantToTry");
+    return new Set(raw ? JSON.parse(raw) : []);
+  } catch { return new Set(); }
+}
+
+function loadVisitHistory(): number[] {
+  try {
+    return JSON.parse(localStorage.getItem("brew_visits") || "[]");
+  } catch { return []; }
 }
 
 function loadSearchHistory(): string[] {
@@ -60,32 +69,31 @@ function SkeletonCard() {
   );
 }
 
+type Tab = "explore" | "random" | "favorites" | "trending";
+
 export default function App() {
   const [locations, setLocations] = useState<Location[]>([]);
   const [loading, setLoading] = useState(true);
   const [selectedLocation, setSelectedLocation] = useState<Location | null>(null);
   const [searchQuery, setSearchQuery] = useState("");
   const [debouncedQuery, setDebouncedQuery] = useState("");
-  const [filterCategory, setFilterCategory] = useState("All");
-  const [filterMinRating, setFilterMinRating] = useState(0);
-  const [filterRadius, setFilterRadius] = useState(0);
-  const [sortMode, setSortMode] = useState<SortMode>("distance");
   const [userLocation, setUserLocation] = useState<{ lat: number; lng: number } | null>(null);
   const [locationDenied, setLocationDenied] = useState(false);
-  const [navigatingTo, setNavigatingTo] = useState<Location | null>(null);
-  const [routeData, setRouteData] = useState<RouteData | null>(null);
-  const [routeLoading, setRouteLoading] = useState(false);
+  const [locationLoading, setLocationLoading] = useState(false);
   const [darkMode, setDarkMode] = useState(false);
   const [showMobileList, setShowMobileList] = useState(false);
-  const [showFilters, setShowFilters] = useState(false);
   const [isOffline, setIsOffline] = useState(!navigator.onLine);
   const [favorites, setFavorites] = useState<Set<number>>(loadFavorites);
-  const [filterAmenities, setFilterAmenities] = useState<Set<string>>(new Set());
+  const [wantToTry, setWantToTry] = useState<Set<number>>(loadWantToTry);
+  const [visitHistory, setVisitHistory] = useState<number[]>(loadVisitHistory);
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
   const [searchHistory, setSearchHistory] = useState<string[]>(loadSearchHistory);
-  const [locationLoaded, setLocationLoaded] = useState(false);
   const [splashDone, setSplashDone] = useState(false);
   const [splashMinTime, setSplashMinTime] = useState(false);
+  const [activeTab, setActiveTab] = useState<Tab>("explore");
+  const [sortOpenOnly, setSortOpenOnly] = useState(false);
+  const [randomPick, setRandomPick] = useState<Location | null>(null);
+  const [randomSpinning, setRandomSpinning] = useState(false);
 
   useEffect(() => {
     const t = setTimeout(() => setSplashMinTime(true), 800);
@@ -98,8 +106,7 @@ export default function App() {
 
   const searchRef = useRef<HTMLInputElement>(null);
   const sentinelRef = useRef<HTMLDivElement>(null);
-  const watcherRef = useRef<number | null>(null);
-  const searchTimerRef = useRef<ReturnType<typeof setTimeout>>();
+  const searchTimerRef = useRef<ReturnType<typeof setTimeout>>(undefined);
   const locationListRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -109,6 +116,14 @@ export default function App() {
   useEffect(() => {
     localStorage.setItem("brew_favorites", JSON.stringify([...favorites]));
   }, [favorites]);
+
+  useEffect(() => {
+    localStorage.setItem("brew_wantToTry", JSON.stringify([...wantToTry]));
+  }, [wantToTry]);
+
+  useEffect(() => {
+    localStorage.setItem("brew_visits", JSON.stringify(visitHistory.slice(0, 100)));
+  }, [visitHistory]);
 
   useEffect(() => {
     localStorage.setItem("brew_searchHistory", JSON.stringify(searchHistory.slice(0, 20)));
@@ -132,10 +147,9 @@ export default function App() {
         searchRef.current?.focus();
       }
       if (e.key === "Escape") {
-        if (navigatingTo) handleCloseNavigation();
-        else if (selectedLocation) setSelectedLocation(null);
+        if (randomPick) { setRandomPick(null); return; }
+        if (selectedLocation) setSelectedLocation(null);
         else if (showMobileList) setShowMobileList(false);
-        else if (showFilters) setShowFilters(false);
       }
     };
     window.addEventListener("keydown", handler);
@@ -145,94 +159,34 @@ export default function App() {
   useEffect(() => {
     if (!splashMinTime) return;
     let cancelled = false;
-
     async function load() {
       try {
-        if (userLocation) {
-          const { nearby, total } = await loadLocationsInRegion(userLocation.lat, userLocation.lng);
-          if (!cancelled) {
-            setLocations(total);
-            setSelectedLocation(nearby[0] || total[0] || null);
-            setLoading(false);
-          }
-        } else {
-          const all = await fetchAllLocations();
-          if (!cancelled) {
-            setLocations(all);
-            setLoading(false);
-          }
+        const all = await fetchAllLocations();
+        if (!cancelled) {
+          setLocations(all);
+          if (all.length > 0) setSelectedLocation(all[0]);
+          setLoading(false);
         }
       } catch {
         if (!cancelled) setLoading(false);
       }
     }
-
     load();
     return () => { cancelled = true; };
-  }, [splashMinTime, userLocation]);
-
-  const handleLocateUser = useCallback(() => {
-    if (!navigator.geolocation) {
-      alert("Geolocation is not supported by your browser");
-      return;
-    }
-    if (watcherRef.current !== null) {
-      navigator.geolocation.clearWatch(watcherRef.current);
-      watcherRef.current = null;
-    }
-    watcherRef.current = navigator.geolocation.watchPosition(
-      (pos) => {
-        setUserLocation({ lat: pos.coords.latitude, lng: pos.coords.longitude });
-        setLocationDenied(false);
-        setLocationLoaded(true);
-      },
-      () => { setLocationDenied(true); setLocationLoaded(true); },
-      { enableHighAccuracy: true, maximumAge: 5000, timeout: 10000 }
-    );
-  }, []);
-
-  useEffect(() => {
-    handleLocateUser();
-    return () => {
-      if (watcherRef.current !== null) navigator.geolocation.clearWatch(watcherRef.current);
-    };
-  }, [handleLocateUser]);
-
-  useEffect(() => {
-    if (locationLoaded && userLocation && locations.length > 0 && !navigatingTo) {
-      let nearest = locations[0];
-      let minDist = Infinity;
-      for (const loc of locations) {
-        const d = getDistance(userLocation.lat, userLocation.lng, loc.lat, loc.lng);
-        if (d < minDist) { minDist = d; nearest = loc; }
-      }
-      setSelectedLocation(nearest);
-    }
-  }, [locationLoaded, userLocation, locations.length > 0]);
+  }, [splashMinTime]);
 
   useEffect(() => {
     const sentinel = sentinelRef.current;
     if (!sentinel) return;
     const obs = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting) setVisibleCount((c) => Math.min(c + PAGE_SIZE, filteredLocations.length));
+        if (entry.isIntersecting) setVisibleCount((c) => Math.min(c + PAGE_SIZE, visibleLocations.length));
       },
       { rootMargin: "400px" }
     );
     obs.observe(sentinel);
     return () => obs.disconnect();
   });
-
-  const categoryCounts = useMemo(() => {
-    const counts: Record<string, number> = {};
-    for (const loc of locations) counts[loc.category] = (counts[loc.category] || 0) + 1;
-    return counts;
-  }, [locations]);
-
-  const categories = useMemo(() => {
-    const cats = new Set(locations.map((l) => l.category));
-    return ["All", ...cats];
-  }, [locations]);
 
   const toggleFavorite = useCallback((id: number) => {
     setFavorites((prev) => {
@@ -242,12 +196,22 @@ export default function App() {
     });
   }, []);
 
-  const toggleAmenity = useCallback((amenity: string) => {
-    setFilterAmenities((prev) => {
+  const toggleWantToTry = useCallback((id: number) => {
+    setWantToTry((prev) => {
       const n = new Set(prev);
-      if (n.has(amenity)) n.delete(amenity); else n.add(amenity);
+      if (n.has(id)) n.delete(id); else n.add(id);
       return n;
     });
+  }, []);
+
+  const handleSelectLocation = useCallback((loc: Location | null) => {
+    setSelectedLocation(loc);
+    if (loc) {
+      setVisitHistory((prev) => {
+        const filtered = prev.filter((id) => id !== loc.id);
+        return [loc.id, ...filtered].slice(0, 100);
+      });
+    }
   }, []);
 
   const handleSearch = (val: string) => {
@@ -264,89 +228,78 @@ export default function App() {
     }, 200);
   };
 
+  const clearSearch = () => {
+    setDebouncedQuery("");
+    setSearchQuery("");
+    searchRef.current?.focus();
+  };
+
+  const handleLocateUser = useCallback(() => {
+    if (!navigator.geolocation) {
+      alert("Geolocation is not supported");
+      return;
+    }
+    setLocationLoading(true);
+    navigator.geolocation.getCurrentPosition(
+      (pos) => {
+        setUserLocation({ lat: pos.coords.latitude, lng: pos.coords.longitude });
+        setLocationDenied(false);
+        setLocationLoading(false);
+      },
+      () => { setLocationDenied(true); setLocationLoading(false); },
+      { enableHighAccuracy: true, timeout: 10000, maximumAge: 30000 }
+    );
+  }, []);
+
+  const handleRandomPick = () => {
+    if (filteredLocations.length === 0) return;
+    setRandomSpinning(true);
+    setRandomPick(null);
+    setTimeout(() => {
+      const pick = filteredLocations[Math.floor(Math.random() * filteredLocations.length)];
+      setRandomPick(pick);
+      setRandomSpinning(false);
+    }, 1200);
+  };
+
   const filteredLocations = useMemo(() => {
     const lower = searchQuery.toLowerCase();
     let result = locations.filter((loc) => {
-      const matchesSearch = !searchQuery || loc.name.toLowerCase().includes(lower) || loc.address.toLowerCase().includes(lower);
-      const matchesCategory = filterCategory === "All" || loc.category === filterCategory;
-      const matchesRating = loc.rating >= filterMinRating;
-
-      const matchesAmenities = filterAmenities.size === 0 || (
-        (!filterAmenities.has("wifi") || !!loc.wifi) &&
-        (!filterAmenities.has("outdoor") || !!loc.outdoor_seating) &&
-        (!filterAmenities.has("wheelchair") || !!loc.wheelchair) &&
-        (!filterAmenities.has("parking") || !!loc.parking) &&
-        (!filterAmenities.has("phone") || !!loc.phone) &&
-        (!filterAmenities.has("open_now") || isOpenNow(loc.opening_hours) === true)
-      );
-
-      return matchesSearch && matchesCategory && matchesRating && matchesAmenities;
+      if (searchQuery && !loc.name.toLowerCase().includes(lower) && !loc.address.toLowerCase().includes(lower)) return false;
+      if (sortOpenOnly && isOpenNow(loc.opening_hours) !== true) return false;
+      if (activeTab === "favorites" && !favorites.has(loc.id)) return false;
+      return true;
     });
 
     if (userLocation) {
-      result = result
-        .map((loc) => ({ ...loc, dist: getDistance(userLocation.lat, userLocation.lng, loc.lat, loc.lng) }))
-        .filter((loc) => filterRadius === 0 || (loc as any).dist <= filterRadius)
-        .sort((a, b) => {
-          if (sortMode === "rating") return b.rating - a.rating;
-          if (sortMode === "name") return a.name.localeCompare(b.name);
-          return (a as any).dist - (b as any).dist;
-        });
+      result = [...result].sort((a, b) => {
+        const dA = getDistance(userLocation.lat, userLocation.lng, a.lat, a.lng);
+        const dB = getDistance(userLocation.lat, userLocation.lng, b.lat, b.lng);
+        return dA - dB;
+      });
     } else {
-      if (sortMode === "rating") result = [...result].sort((a, b) => b.rating - a.rating);
-      else if (sortMode === "name") result = [...result].sort((a, b) => a.name.localeCompare(b.name));
+      result = [...result].sort((a, b) => a.name.localeCompare(b.name));
     }
 
     result.sort((a, b) => {
-      const af = favorites.has(a.id) ? 0 : 1;
-      const bf = favorites.has(b.id) ? 0 : 1;
-      return af - bf;
+      const aFav = favorites.has(a.id) ? 0 : 1;
+      const bFav = favorites.has(b.id) ? 0 : 1;
+      return aFav - bFav;
     });
 
     return result;
-  }, [locations, searchQuery, filterCategory, filterMinRating, filterRadius, sortMode, filterAmenities, userLocation, favorites]);
+  }, [locations, searchQuery, userLocation, favorites, activeTab, sortOpenOnly]);
 
-  useEffect(() => {
-    setVisibleCount(PAGE_SIZE);
-  }, [searchQuery, filterCategory, filterMinRating, filterRadius, sortMode, filterAmenities]);
+  const trendingLocations = useMemo(() => {
+    return [...locations].sort((a, b) => b.rating - a.rating).slice(0, 10);
+  }, [locations]);
 
-  const handleNavigate = async (loc: Location) => {
-    if (!userLocation) {
-      alert("Please enable location access to get directions.");
-      return;
-    }
-    if (!navigator.onLine) {
-      const url = `https://www.google.com/maps/dir/?api=1&origin=${userLocation.lat},${userLocation.lng}&destination=${loc.lat},${loc.lng}`;
-      if (confirm("Navigation needs internet. Open in Google Maps?")) window.open(url, "_blank");
-      return;
-    }
-    setSelectedLocation(null);
-    setNavigatingTo(loc);
-    setRouteLoading(true);
-    setRouteData(null);
-    try {
-      const route = await fetchRoute(userLocation.lat, userLocation.lng, loc.lat, loc.lng);
-      if (!route) { alert("Could not calculate route."); setNavigatingTo(null); }
-      else setRouteData(route);
-    } catch { alert("Route calculation failed."); setNavigatingTo(null); }
-    finally { setRouteLoading(false); }
+  const handleNavigate = (loc: Location) => {
+    const origin = userLocation ? `&origin=${userLocation.lat},${userLocation.lng}` : "";
+    window.open(`https://www.google.com/maps/dir/?api=1${origin}&destination=${loc.lat},${loc.lng}`, "_blank");
   };
 
-  const handleCloseNavigation = useCallback(() => {
-    setNavigatingTo(null);
-    setRouteData(null);
-  }, []);
-
-  const amenityOptions = [
-    { key: "wifi", label: "WiFi" },
-    { key: "outdoor", label: "Outdoor" },
-    { key: "wheelchair", label: "Accessible" },
-    { key: "parking", label: "Parking" },
-    { key: "phone", label: "Has Phone" },
-    { key: "open_now", label: "Open Now" },
-  ];
-
-  const visibleLocations = filteredLocations.slice(0, visibleCount);
+  const visibleLocations = activeTab === "random" ? trendingLocations : filteredLocations;
   const query = debouncedQuery;
 
   return (
@@ -356,7 +309,7 @@ export default function App() {
           <div className="header-row">
             <h1><img src={coffeeLogo} alt="" className="coffee-logo" /> cafe<span className="brand-dot">.</span><span className="brand-ph">ph</span></h1>
             <div className="header-actions">
-              <button className="theme-toggle" onClick={() => setDarkMode((p) => !p)} aria-label={darkMode ? "Light mode" : "Dark mode"}>
+              <button className="theme-toggle" onClick={() => setDarkMode((p) => !p)} aria-label={darkMode ? "Light" : "Dark"}>
                 {darkMode ? "☀️" : "🌙"}
               </button>
             </div>
@@ -367,132 +320,116 @@ export default function App() {
 
       <div className="search-bar">
         <div className="search-wrapper">
-          <svg className="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" aria-hidden="true">
+          <svg className="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
             <circle cx="11" cy="11" r="8" /><line x1="21" y1="21" x2="16.65" y2="16.65" />
           </svg>
-          <input
-            ref={searchRef} type="text" placeholder="Search coffee shop... (press /)"
-            value={query} onChange={(e) => handleSearch(e.target.value)}
-            aria-label="Search coffee shops"
-          />
-          {searchHistory.length > 0 && !query && (
-            <div className="search-history">
-              {searchHistory.slice(0, 5).map((s) => (
-                <button key={s} className="search-history-item" onClick={() => handleSearch(s)}>{s}</button>
-              ))}
-            </div>
+          <input ref={searchRef} type="text" placeholder="Search coffee shop..." value={query} onChange={(e) => handleSearch(e.target.value)} aria-label="Search" />
+          {query && (
+            <button className="search-clear" onClick={clearSearch} aria-label="Clear">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                <line x1="18" y1="6" x2="6" y2="18" /><line x1="6" y1="6" x2="18" y2="18" />
+              </svg>
+            </button>
           )}
         </div>
-        <button className={`locate-me-btn ${userLocation ? "active" : ""}`}
-          onClick={handleLocateUser} aria-label="Find my location" title="Find my location">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" aria-hidden="true">
+        <button className={`locate-btn ${locationLoading ? "locating" : ""} ${userLocation ? "located" : ""}`} onClick={handleLocateUser} aria-label="Location">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
             <circle cx="12" cy="12" r="10" /><circle cx="12" cy="12" r="3" />
             <line x1="12" y1="2" x2="12" y2="6" /><line x1="12" y1="18" x2="12" y2="22" />
             <line x1="2" y1="12" x2="6" y2="12" /><line x1="18" y1="12" x2="22" y2="12" />
           </svg>
         </button>
-        <button className="mobile-list-btn" onClick={() => setShowMobileList((p) => !p)} aria-label="Toggle list">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" aria-hidden="true">
+        <button className="mobile-list-btn" onClick={() => setShowMobileList((p) => !p)} aria-label="List">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
             <line x1="3" y1="6" x2="21" y2="6" /><line x1="3" y1="12" x2="21" y2="12" /><line x1="3" y1="18" x2="21" y2="18" />
           </svg>
         </button>
-        <button className={`filter-toggle-btn ${showFilters ? "active" : ""}`}
-          onClick={() => setShowFilters((p) => !p)} aria-label="Toggle filters">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" aria-hidden="true">
-            <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3" />
+        {searchHistory.length > 0 && !query && (
+          <div className="search-history">
+            {searchHistory.slice(0, 5).map((s) => (
+              <button key={s} className="search-history-item" onClick={() => handleSearch(s)}>{s}</button>
+            ))}
+          </div>
+        )}
+      </div>
+
+      <div className="quick-tools">
+        <button className={`tool-chip ${sortOpenOnly ? "active" : ""}`} onClick={() => setSortOpenOnly((p) => !p)}>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+            <circle cx="12" cy="12" r="10" /><polyline points="12 6 12 12 16 14" />
           </svg>
-          Filters
+          Open Now
         </button>
-        <div className={`filter-panel ${showFilters ? "filter-panel-open" : ""}`}>
-          <div className="category-filters" role="tablist" aria-label="Category">
-            {categories.map((cat) => (
-              <button key={cat} className={`filter-chip ${filterCategory === cat ? "active" : ""}`}
-                onClick={() => { setFilterCategory(cat); setShowFilters(false); }} role="tab" aria-selected={filterCategory === cat}>
-                {cat}{cat !== "All" ? ` (${categoryCounts[cat] || 0})` : ""}
-              </button>
-            ))}
-          </div>
-          <div className="amenity-filters">
-            {amenityOptions.map((a) => (
-              <button key={a.key}
-                className={`filter-chip amenity-chip ${filterAmenities.has(a.key) ? "active" : ""}`}
-                onClick={() => toggleAmenity(a.key)}>{a.label}</button>
-            ))}
-          </div>
-        </div>
+        <button className="tool-chip" onClick={handleRandomPick}>
+          🎲 Pick for Me
+        </button>
+        <button className="tool-chip" onClick={() => { setActiveTab("trending"); setSearchQuery(""); setDebouncedQuery(""); }}>
+          🔥 Trending
+        </button>
+        {userLocation && (
+          <span className="tool-chip tool-location" title="Location active">
+            <span className="locate-dot" /> Live
+          </span>
+        )}
       </div>
 
       {isOffline && (
-        <div className="offline-banner" role="alert">You're offline — cafe data works, but map tiles won't load</div>
+        <div className="offline-banner" role="alert">Offline — map tiles may not load</div>
       )}
 
       <div className="main-layout">
-        <aside className={`sidebar ${showMobileList ? "sidebar-open" : ""}`} aria-label="Coffee shop list">
+        <aside className={`sidebar ${showMobileList ? "sidebar-open" : ""}`}>
           <div className="sidebar-header">
-            <h3>{userLocation ? "Near You" : "All Cafes"}<span>{filteredLocations.length}</span></h3>
-            <div className="sidebar-controls">
-              <select className="sort-select" value={sortMode} onChange={(e) => setSortMode(e.target.value as SortMode)} aria-label="Sort by">
-                <option value="distance">Distance</option>
-                <option value="rating">Rating</option>
-                <option value="name">Name</option>
-              </select>
-              {userLocation && (
-                <div className="radius-filter">
-                  <input type="range" min="0" max="50" step="1" value={filterRadius}
-                    onChange={(e) => setFilterRadius(parseInt(e.target.value))} aria-label="Max radius" />
-                  <span className="radius-filter-label">{filterRadius === 0 ? "Any" : `${filterRadius}km`}</span>
-                </div>
-              )}
-              <div className="rating-filter">
-                <input type="range" min="0" max="5" step="0.5" value={filterMinRating}
-                  onChange={(e) => setFilterMinRating(parseFloat(e.target.value))} aria-label="Min rating" />
-                <span className="rating-filter-label">{filterMinRating}+ ★</span>
-              </div>
-            </div>
-            {showMobileList && (
-              <button className="close-btn mobile-close" onClick={() => setShowMobileList(false)} aria-label="Close">✕</button>
-            )}
+            <h3>
+              {activeTab === "favorites" ? "Favorites" : activeTab === "random" || activeTab === "trending" ? "Trending" : userLocation ? "Near You" : "All Cafes"}
+              <span className="count-badge">{visibleLocations.length}</span>
+            </h3>
+            {showMobileList && <button className="close-btn" onClick={() => setShowMobileList(false)}>✕</button>}
           </div>
+          <div className="sidebar-drag" />
           <div className="location-list" ref={locationListRef} role="list">
             {loading ? (
               Array.from({ length: 8 }).map((_, i) => <SkeletonItem key={i} />)
             ) : visibleLocations.length === 0 ? (
               <div className="empty-state">
-                <span style={{ fontSize: 48, opacity: 0.4, marginBottom: 12 }}>☕</span>
-                <p>No coffee shops found</p>
+                <span className="empty-icon">☕</span>
+                <p>{activeTab === "favorites" ? "No favorites yet" : "No coffee shops found"}</p>
+                {activeTab === "favorites" && <p className="empty-hint">Tap the ★ on any cafe to add it</p>}
               </div>
             ) : (
-              visibleLocations.map((loc) => (
-                <button key={loc.id}
-                  className={`location-item ${selectedLocation?.id === loc.id ? "active" : ""}`}
-                  onClick={() => { setSelectedLocation(loc); setShowMobileList(false); }}
-                  role="listitem" aria-label={loc.name}>
-                  <div className="location-item-top">
-                    <span className="location-item-name">{highlightText(loc.name, searchQuery)}</span>
-                    <div className="location-item-actions">
-                      <button className={`fav-btn ${favorites.has(loc.id) ? "fav-active" : ""}`}
-                        onClick={(e) => { e.stopPropagation(); toggleFavorite(loc.id); }}
-                        aria-label={favorites.has(loc.id) ? "Remove from favorites" : "Add to favorites"}>
-                        {favorites.has(loc.id) ? "★" : "☆"}
-                      </button>
-                      <span className="location-item-category">{loc.category}</span>
+              visibleLocations.map((loc) => {
+                const dist = userLocation ? getDistance(userLocation.lat, userLocation.lng, loc.lat, loc.lng) : null;
+                const visited = visitHistory.includes(loc.id);
+                const isFav = favorites.has(loc.id);
+                const isWant = wantToTry.has(loc.id);
+                return (
+                  <button key={loc.id}
+                    className={`location-item ${selectedLocation?.id === loc.id ? "active" : ""} ${visited ? "visited" : ""}`}
+                    onClick={() => { handleSelectLocation(loc); setShowMobileList(false); }}
+                    role="listitem" aria-label={loc.name}>
+                    <div className="location-item-top">
+                      <span className="location-item-name">{highlightText(loc.name, searchQuery)}</span>
+                      <div className="location-item-actions">
+                        {isWant && <span className="wtt-indicator" title="Want to try">📋</span>}
+                        <span className="location-item-category">{loc.category}</span>
+                      </div>
                     </div>
-                  </div>
-                  <div className="location-item-rating">
-                    <span className="rating-bean">{renderRating(loc.rating)}</span>
-                    <span>{loc.rating}</span>
-                  </div>
-                  <div className="location-item-address">
-                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" aria-hidden="true">
-                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" /><circle cx="12" cy="10" r="3" />
-                    </svg>
-                    {highlightText(loc.address, searchQuery)}
-                    {(loc as any).dist !== undefined && (
-                      <span className="location-item-distance">{formatDistance((loc as any).dist)}</span>
-                    )}
-                  </div>
-                </button>
-              ))
+                    <div className="location-item-rating">
+                      <span className="rating-bean">{renderRating(loc.rating)}</span>
+                      <span>{loc.rating}</span>
+                      {isFav && <span className="fav-indicator">★</span>}
+                      {dist !== null && <span className="location-item-distance">{formatDistance(dist)}</span>}
+                    </div>
+                    <div className="location-item-address">
+                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" /><circle cx="12" cy="10" r="3" />
+                      </svg>
+                      {highlightText(loc.address, searchQuery)}
+                    </div>
+                    {visited && <div className="visited-bar" />}
+                  </button>
+                );
+              })
             )}
             {!loading && visibleCount < filteredLocations.length && <div ref={sentinelRef} className="scroll-sentinel" />}
           </div>
@@ -504,28 +441,15 @@ export default function App() {
           ) : (
             <>
               <MapView
-                locations={filteredLocations}
+                locations={visibleLocations}
                 selectedLocation={selectedLocation}
-                onSelectLocation={(loc) => setSelectedLocation(loc)}
+                onSelectLocation={handleSelectLocation}
                 userLocation={userLocation}
                 onLocateUser={handleLocateUser}
                 locationDenied={locationDenied}
-                routeCoords={routeData?.coordinates ?? null}
+                locationLoading={locationLoading}
               />
-              {navigatingTo && routeData ? (
-                <DirectionsPanel
-                  destinationName={navigatingTo.name}
-                  route={routeData}
-                  onClose={handleCloseNavigation}
-                  userLocation={userLocation}
-                  destinationLat={navigatingTo.lat}
-                  destinationLng={navigatingTo.lng}
-                />
-              ) : routeLoading ? (
-                <div className="location-card loading-card" role="status">
-                  <div className="loading-spinner" /><p>Calculating route...</p>
-                </div>
-              ) : selectedLocation ? (
+              {selectedLocation && (
                 <LocationCard
                   location={selectedLocation}
                   onClose={() => setSelectedLocation(null)}
@@ -533,13 +457,71 @@ export default function App() {
                   userLocation={userLocation}
                   isFavorite={favorites.has(selectedLocation.id)}
                   onToggleFavorite={toggleFavorite}
+                  isWantToTry={wantToTry.has(selectedLocation.id)}
+                  onToggleWantToTry={toggleWantToTry}
                 />
-              ) : null}
+              )}
             </>
           )}
         </div>
       </div>
-      <div className="shortcuts-hint">Press <kbd>/</kbd> to search · <kbd>Esc</kbd> to close</div>
+
+      {/* Random Picker Modal */}
+      {randomPick && (
+        <div className="random-overlay" onClick={() => setRandomPick(null)}>
+          <div className="random-modal" onClick={(e) => e.stopPropagation()}>
+            <button className="close-btn random-close" onClick={() => setRandomPick(null)}>✕</button>
+            <div className="random-emoji">🎉</div>
+            <p className="random-label">Your coffee destination:</p>
+            <h2 className="random-name">{randomPick.name}</h2>
+            <p className="random-cat">{randomPick.category}</p>
+            <div className="random-rating">
+              {"★".repeat(Math.round(randomPick.rating))}{"☆".repeat(5 - Math.round(randomPick.rating))}
+              <span>{randomPick.rating}</span>
+            </div>
+            <p className="random-addr">{randomPick.address}</p>
+            <div className="random-actions">
+              <button className="navigate-btn" onClick={() => { handleNavigate(randomPick); setRandomPick(null); }}>📍 Go</button>
+              <button className="random-again" onClick={handleRandomPick}>🎲 Again</button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {randomSpinning && (
+        <div className="random-overlay">
+          <div className="random-spin">
+            <div className="random-spinner">☕</div>
+            <p>Picking for you...</p>
+          </div>
+        </div>
+      )}
+
+      {/* Bottom Nav */}
+      <nav className="bottom-nav">
+        <button className={`bnav-btn ${activeTab === "explore" ? "active" : ""}`} onClick={() => setActiveTab("explore")}>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/>
+          </svg>
+          <span>Explore</span>
+        </button>
+        <button className={`bnav-btn ${activeTab === "random" || activeTab === "trending" ? "active" : ""}`} onClick={() => { setActiveTab(activeTab === "trending" ? "explore" : "trending"); }}>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/>
+          </svg>
+          <span>Trending</span>
+        </button>
+        <button className="bnav-btn bnav-random" onClick={handleRandomPick} aria-label="Random pick">
+          🎲
+        </button>
+        <button className={`bnav-btn ${activeTab === "favorites" ? "active" : ""}`} onClick={() => setActiveTab(activeTab === "favorites" ? "explore" : "favorites")}>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill={activeTab === "favorites" ? "currentColor" : "none"} stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+          </svg>
+          <span>Favorites</span>
+        </button>
+      </nav>
+
       <div className={`splash-screen ${splashDone ? "splash-hidden" : ""}`}>
         <img src={coffeeLogo} alt="" className="splash-logo" />
         <div className="splash-title">cafe<span className="splash-dot">.</span><span className="splash-ph">ph</span></div>

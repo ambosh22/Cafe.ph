@@ -1,11 +1,5 @@
 import { useEffect, useRef } from "react";
-import {
-  MapContainer,
-  TileLayer,
-  Marker,
-  Popup,
-  useMap,
-} from "react-leaflet";
+import { MapContainer, TileLayer, Marker, Popup, useMap } from "react-leaflet";
 import L from "leaflet";
 import "leaflet.markercluster";
 import "leaflet.markercluster/dist/MarkerCluster.css";
@@ -36,64 +30,24 @@ const userIcon = L.divIcon({
   popupAnchor: [0, -40],
 });
 
-function RouteLine({
-  coordinates,
-}: {
-  coordinates: [number, number][] | null;
-}) {
-  const map = useMap();
-  const layerRef = useRef<L.Polyline | null>(null);
-
-  useEffect(() => {
-    if (layerRef.current) {
-      layerRef.current.remove();
-      layerRef.current = null;
-    }
-    if (coordinates && coordinates.length > 0) {
-      const polyline = L.polyline(coordinates, {
-        color: "#6f4e37",
-        weight: 5,
-        opacity: 0.8,
-        dashArray: "1, 12",
-      }).addTo(map);
-
-      const bounds = L.latLngBounds(coordinates);
-      map.fitBounds(bounds, { padding: [50, 50], duration: 1 });
-
-      layerRef.current = polyline;
-    }
-    return () => {
-      if (layerRef.current) {
-        layerRef.current.remove();
-      }
-    };
-  }, [coordinates, map]);
-
-  return null;
-}
-
 function MapController({
   userLocation,
   locationDenied,
-  routingActive,
   hasSelectedLocation,
 }: {
   userLocation: { lat: number; lng: number } | null;
   locationDenied: boolean;
-  routingActive: boolean;
   hasSelectedLocation: boolean;
 }) {
   const map = useMap();
-
   useEffect(() => {
-    if (routingActive) return;
     if (hasSelectedLocation) return;
     if (userLocation) {
       map.flyTo([userLocation.lat, userLocation.lng], 14, { duration: 1.5 });
     } else if (!locationDenied) {
-      map.flyTo([14.558, 121.025], 12, { duration: 1 });
+      map.setView([14.558, 121.025], 12, { animate: true, duration: 1 });
     }
-  }, [userLocation, locationDenied, routingActive, hasSelectedLocation, map]);
+  }, [userLocation, locationDenied, hasSelectedLocation, map]);
   return null;
 }
 
@@ -173,7 +127,7 @@ interface MapViewProps {
   userLocation: { lat: number; lng: number } | null;
   onLocateUser: () => void;
   locationDenied: boolean;
-  routeCoords: [number, number][] | null;
+  locationLoading: boolean;
 }
 
 export default function MapView({
@@ -183,10 +137,8 @@ export default function MapView({
   userLocation,
   onLocateUser,
   locationDenied,
-  routeCoords,
+  locationLoading,
 }: MapViewProps) {
-  const routingActive = routeCoords !== null && routeCoords.length > 0;
-
   return (
     <div className="map-view">
       <MapContainer
@@ -199,22 +151,15 @@ export default function MapView({
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
-        {!routingActive && <FlyToLocation location={selectedLocation} />}
+        <FlyToLocation location={selectedLocation} />
         <MapController
           userLocation={userLocation}
           locationDenied={locationDenied}
-          routingActive={routingActive}
           hasSelectedLocation={selectedLocation !== null}
         />
-        <RouteLine coordinates={routeCoords} />
         {userLocation && (
-          <Marker
-            position={[userLocation.lat, userLocation.lng]}
-            icon={userIcon}
-          >
-            <Popup>
-              <strong>You are here</strong>
-            </Popup>
+          <Marker position={[userLocation.lat, userLocation.lng]} icon={userIcon}>
+            <Popup>You are here</Popup>
           </Marker>
         )}
         <Markers
@@ -223,13 +168,18 @@ export default function MapView({
           onSelectLocation={onSelectLocation}
         />
       </MapContainer>
-      <div className="locate-btn-wrap" onClick={onLocateUser} role="button" tabIndex={0} aria-label="Find my location" title={locationDenied ? "Enable location access" : "Recenter on your location"}>
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <button
+        className={`map-locate-btn ${locationLoading ? "locating" : ""}`}
+        onClick={onLocateUser}
+        aria-label={locationDenied ? "Enable location access" : "Find my location"}
+        title={locationDenied ? "Enable location access" : "Find my location"}
+      >
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
           <circle cx="12" cy="12" r="10" /><circle cx="12" cy="12" r="3" />
           <line x1="12" y1="2" x2="12" y2="6" /><line x1="12" y1="18" x2="12" y2="22" />
           <line x1="2" y1="12" x2="6" y2="12" /><line x1="18" y1="12" x2="22" y2="12" />
         </svg>
-      </div>
+      </button>
     </div>
   );
 }

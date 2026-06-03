@@ -1,0 +1,28 @@
+plugins = []
+headers = []
+redirects = []
+
+[functions]
+
+[functions."*"]
+
+[build]
+publish = "/Users/hubertpixels/Desktop/Healthier/Healthier/dist"
+publishOrigin = "ui"
+commandOrigin = "ui"
+base = "/Users/hubertpixels/Desktop/Healthier/Healthier"
+command = "npm run build"
+
+[build.environment]
+
+[build.processing]
+
+[build.processing.css]
+
+[build.processing.html]
+
+[build.processing.images]
+
+[build.processing.js]
+
+[build.services]

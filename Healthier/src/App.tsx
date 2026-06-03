@@ -69,7 +69,7 @@ function SkeletonCard() {
   );
 }
 
-type Tab = "explore" | "random" | "favorites" | "trending";
+type Tab = "explore" | "favorites" | "trending";
 
 export default function App() {
   const [locations, setLocations] = useState<Location[]>([]);
@@ -92,8 +92,6 @@ export default function App() {
   const [splashMinTime, setSplashMinTime] = useState(false);
   const [activeTab, setActiveTab] = useState<Tab>("explore");
   const [sortOpenOnly, setSortOpenOnly] = useState(false);
-  const [randomPick, setRandomPick] = useState<Location | null>(null);
-  const [randomSpinning, setRandomSpinning] = useState(false);
 
   useEffect(() => {
     const t = setTimeout(() => setSplashMinTime(true), 800);
@@ -147,7 +145,6 @@ export default function App() {
         searchRef.current?.focus();
       }
       if (e.key === "Escape") {
-        if (randomPick) { setRandomPick(null); return; }
         if (selectedLocation) setSelectedLocation(null);
         else if (showMobileList) setShowMobileList(false);
       }
@@ -251,17 +248,6 @@ export default function App() {
     );
   }, []);
 
-  const handleRandomPick = () => {
-    if (filteredLocations.length === 0) return;
-    setRandomSpinning(true);
-    setRandomPick(null);
-    setTimeout(() => {
-      const pick = filteredLocations[Math.floor(Math.random() * filteredLocations.length)];
-      setRandomPick(pick);
-      setRandomSpinning(false);
-    }, 1200);
-  };
-
   const filteredLocations = useMemo(() => {
     const lower = searchQuery.toLowerCase();
     let result = locations.filter((loc) => {
@@ -299,7 +285,7 @@ export default function App() {
     window.open(`https://www.google.com/maps/dir/?api=1${origin}&destination=${loc.lat},${loc.lng}`, "_blank");
   };
 
-  const visibleLocations = activeTab === "random" ? trendingLocations : filteredLocations;
+  const visibleLocations = filteredLocations;
   const query = debouncedQuery;
 
   return (
@@ -360,9 +346,6 @@ export default function App() {
           </svg>
           Open Now
         </button>
-        <button className="tool-chip" onClick={handleRandomPick}>
-          🎲 Pick for Me
-        </button>
         <button className="tool-chip" onClick={() => { setActiveTab("trending"); setSearchQuery(""); setDebouncedQuery(""); }}>
           🔥 Trending
         </button>
@@ -381,7 +364,7 @@ export default function App() {
         <aside className={`sidebar ${showMobileList ? "sidebar-open" : ""}`}>
           <div className="sidebar-header">
             <h3>
-              {activeTab === "favorites" ? "Favorites" : activeTab === "random" || activeTab === "trending" ? "Trending" : userLocation ? "Near You" : "All Cafes"}
+              {activeTab === "favorites" ? "Favorites" : activeTab === "trending" ? "Trending" : userLocation ? "Near You" : "All Cafes"}
               <span className="count-badge">{visibleLocations.length}</span>
             </h3>
             {showMobileList && <button className="close-btn" onClick={() => setShowMobileList(false)}>✕</button>}
@@ -466,37 +449,6 @@ export default function App() {
         </div>
       </div>
 
-      {/* Random Picker Modal */}
-      {randomPick && (
-        <div className="random-overlay" onClick={() => setRandomPick(null)}>
-          <div className="random-modal" onClick={(e) => e.stopPropagation()}>
-            <button className="close-btn random-close" onClick={() => setRandomPick(null)}>✕</button>
-            <div className="random-emoji">🎉</div>
-            <p className="random-label">Your coffee destination:</p>
-            <h2 className="random-name">{randomPick.name}</h2>
-            <p className="random-cat">{randomPick.category}</p>
-            <div className="random-rating">
-              {"★".repeat(Math.round(randomPick.rating))}{"☆".repeat(5 - Math.round(randomPick.rating))}
-              <span>{randomPick.rating}</span>
-            </div>
-            <p className="random-addr">{randomPick.address}</p>
-            <div className="random-actions">
-              <button className="navigate-btn" onClick={() => { handleNavigate(randomPick); setRandomPick(null); }}>📍 Go</button>
-              <button className="random-again" onClick={handleRandomPick}>🎲 Again</button>
-            </div>
-          </div>
-        </div>
-      )}
-
-      {randomSpinning && (
-        <div className="random-overlay">
-          <div className="random-spin">
-            <div className="random-spinner">☕</div>
-            <p>Picking for you...</p>
-          </div>
-        </div>
-      )}
-
       {/* Bottom Nav */}
       <nav className="bottom-nav">
         <button className={`bnav-btn ${activeTab === "explore" ? "active" : ""}`} onClick={() => setActiveTab("explore")}>
@@ -505,14 +457,11 @@ export default function App() {
           </svg>
           <span>Explore</span>
         </button>
-        <button className={`bnav-btn ${activeTab === "random" || activeTab === "trending" ? "active" : ""}`} onClick={() => { setActiveTab(activeTab === "trending" ? "explore" : "trending"); }}>
+        <button className={`bnav-btn ${activeTab === "trending" ? "active" : ""}`} onClick={() => { setActiveTab(activeTab === "trending" ? "explore" : "trending"); }}>
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/>
           </svg>
           <span>Trending</span>
-        </button>
-        <button className="bnav-btn bnav-random" onClick={handleRandomPick} aria-label="Random pick">
-          🎲
         </button>
         <button className={`bnav-btn ${activeTab === "favorites" ? "active" : ""}`} onClick={() => setActiveTab(activeTab === "favorites" ? "explore" : "favorites")}>
           <svg width="20" height="20" viewBox="0 0 24 24" fill={activeTab === "favorites" ? "currentColor" : "none"} stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">

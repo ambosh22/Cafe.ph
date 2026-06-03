@@ -1,0 +1,12 @@
+{
+  "name": "cafe.ph - Coffee Shops Near Me",
+  "short_name": "cafe.ph",
+  "description": "Find the best coffee shops near you in the Philippines",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fdfbf7",
+  "theme_color": "#2c1810",
+  "icons": [
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}

@@ -1,0 +1,142 @@
+[
+  {
+    "name": "metro_manila",
+    "bbox": [
+      14.25,
+      120.85,
+      14.85,
+      121.25
+    ],
+    "count": 2492
+  },
+  {
+    "name": "luzon_north",
+    "bbox": [
+      16.0,
+      119.8,
+      19.0,
+      122.0
+    ],
+    "count": 504
+  },
+  {
+    "name": "luzon_central",
+    "bbox": [
+      14.85,
+      120.0,
+      16.5,
+      122.0
+    ],
+    "count": 504
+  },
+  {
+    "name": "luzon_south",
+    "bbox": [
+      12.5,
+      122.0,
+      14.5,
+      124.5
+    ],
+    "count": 127
+  },
+  {
+    "name": "luzon_ilocos",
+    "bbox": [
+      16.0,
+      119.8,
+      18.5,
+      121.2
+    ],
+    "count": 0
+  },
+  {
+    "name": "cebu",
+    "bbox": [
+      9.5,
+      123.2,
+      10.8,
+      124.2
+    ],
+    "count": 488
+  },
+  {
+    "name": "visayas_west",
+    "bbox": [
+      9.5,
+      122.0,
+      11.5,
+      123.8
+    ],
+    "count": 352
+  },
+  {
+    "name": "visayas_east",
+    "bbox": [
+      9.8,
+      124.0,
+      12.0,
+      125.8
+    ],
+    "count": 150
+  },
+  {
+    "name": "mindanao_south",
+    "bbox": [
+      5.8,
+      124.5,
+      8.0,
+      126.5
+    ],
+    "count": 661
+  },
+  {
+    "name": "mindanao_north",
+    "bbox": [
+      8.0,
+      123.5,
+      9.5,
+      125.8
+    ],
+    "count": 175
+  },
+  {
+    "name": "mindanao_west",
+    "bbox": [
+      6.5,
+      121.5,
+      8.5,
+      123.5
+    ],
+    "count": 27
+  },
+  {
+    "name": "palawan",
+    "bbox": [
+      8.5,
+      117.0,
+      12.0,
+      119.5
+    ],
+    "count": 53
+  },
+  {
+    "name": "batanes",
+    "bbox": [
+      18.0,
+      121.5,
+      21.0,
+      122.5
+    ],
+    "count": 2
+  },
+  {
+    "name": "mindoro",
+    "bbox": [
+      12.0,
+      120.5,
+      13.8,
+      122.2
+    ],
+    "count": 71
+  }
+]

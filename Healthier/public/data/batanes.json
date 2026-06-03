@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Phil's Brew",
+    "address": "Phil's Brew",
+    "lat": 20.447537,
+    "lng": 121.970117,
+    "category": "Local",
+    "description": "Cozy neighborhood cafe with a warm atmosphere, great coffee, and a welcoming community vibe",
+    "rating": 4.5,
+    "image": null,
+    "opening_hours": null,
+    "phone": null,
+    "website": null,
+    "wifi": null,
+    "outdoor_seating": null,
+    "parking": null,
+    "wheelchair": null,
+    "id": 1350
+  },
+  {
+    "name": "Conscience Cafe and Souvenir",
+    "address": "Conscience Cafe and Souvenir",
+    "lat": 20.334645,
+    "lng": 121.872749,
+    "category": "Local",
+    "description": "Cozy neighborhood cafe with a warm atmosphere, great coffee, and a welcoming community vibe",
+    "rating": 4.1,
+    "image": null,
+    "opening_hours": null,
+    "phone": null,
+    "website": null,
+    "wifi": null,
+    "outdoor_seating": null,
+    "parking": null,
+    "wheelchair": "yes",
+    "id": 2296
+  }
+]

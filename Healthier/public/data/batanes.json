@@ -15,7 +15,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1350
+    "id": 1363
   },
   {
     "name": "Conscience Cafe and Souvenir",
@@ -33,6 +33,6 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": "yes",
-    "id": 2296
+    "id": 2320
   }
 ]

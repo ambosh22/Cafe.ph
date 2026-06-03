@@ -1,50 +1,26 @@
 #!/usr/bin/env python3
-"""Fetch all coffee shops in the Philippines from Overpass API."""
+"""Fetch coffee shops in Luzon from Overpass API. Preserves existing Visayas/Mindanao data."""
 
 import json
 import time
 import urllib.request
 import urllib.error
-import re
 import random
 import os
 
+# Only process Luzon regions — existing Visayas/Mindanao files stay untouched
 REGIONS = [
-    # Metro Manila
     {"name": "metro_manila", "bbox": [14.250, 120.850, 14.850, 121.250]},
-    # Luzon - North
     {"name": "luzon_north", "bbox": [16.000, 119.800, 19.000, 122.000]},
-    # Luzon - Central
     {"name": "luzon_central", "bbox": [14.850, 120.000, 16.500, 122.000]},
-    # Luzon - South (Bicol etc)
     {"name": "luzon_south", "bbox": [12.500, 122.000, 14.500, 124.500]},
-    # Luzon - Ilocos/CAR
-    {"name": "luzon_ilocos", "bbox": [16.000, 119.800, 18.500, 121.200]},
-    # Cebu
-    {"name": "cebu", "bbox": [9.500, 123.200, 10.800, 124.200]},
-    # Negros / Panay
-    {"name": "visayas_west", "bbox": [9.500, 122.000, 11.500, 123.800]},
-    # Leyte / Samar / Bohol
-    {"name": "visayas_east", "bbox": [9.800, 124.000, 12.000, 125.800]},
-    # Davao / GenSan / SOCCSKSARGEN
-    {"name": "mindanao_south", "bbox": [5.800, 124.500, 8.000, 126.500]},
-    # CDO / Bukidnon / Caraga
-    {"name": "mindanao_north", "bbox": [8.000, 123.500, 9.500, 125.800]},
-    # Zamboanga / Basilan
-    {"name": "mindanao_west", "bbox": [6.500, 121.500, 8.500, 123.500]},
-    # Palawan
-    {"name": "palawan", "bbox": [8.500, 117.000, 12.000, 119.500]},
-    # Batanes / Babuyan
-    {"name": "batanes", "bbox": [18.000, 121.500, 21.000, 122.500]},
-    # Mindoro / Marinduque / Romblon
-    {"name": "mindoro", "bbox": [12.000, 120.500, 13.800, 122.200]},
 ]
 
 OVERPASS_URL = "https://overpass-api.de/api/interpreter"
 
-def build_overpass_query(south, west, north, east):
+def build_query(south, west, north, east):
     return f"""
-    [out:json][timeout:120];
+    [out:json][timeout:180][maxsize:1073741824];
     (
       node["amenity"="cafe"]({south},{west},{north},{east});
       way["amenity"="cafe"]({south},{west},{north},{east});
@@ -54,278 +30,195 @@ def build_overpass_query(south, west, north, east):
       way["craft"="coffee_roaster"]({south},{west},{north},{east});
       node["cuisine"="coffee_shop"]({south},{west},{north},{east});
       way["cuisine"="coffee_shop"]({south},{west},{north},{east});
+      node["tourism"="cafe"]({south},{west},{north},{east});
+      way["tourism"="cafe"]({south},{west},{north},{east});
+      node["leisure"="cafe"]({south},{west},{north},{east});
+      way["leisure"="cafe"]({south},{west},{north},{east});
     );
     out center;
     """
 
-def fetch_region(south, west, north, east, max_retries=5):
-    query = build_overpass_query(south, west, north, east)
-    data = {"south": south, "west": west, "north": north, "east": east}
-    
+def fetch_region(south, west, north, east, max_retries=3):
+    query = build_query(south, west, north, east)
     for attempt in range(max_retries):
         try:
             req = urllib.request.Request(
                 OVERPASS_URL,
                 data=f"data={query}".encode(),
-                headers={"User-Agent": "BrewPHCoffeeFinder/1.0"},
+                headers={"User-Agent": "CafePH/2.0"},
             )
-            with urllib.request.urlopen(req, timeout=180) as resp:
+            with urllib.request.urlopen(req, timeout=300) as resp:
                 return json.loads(resp.read())
         except Exception as e:
-            wait = 2 ** attempt * 5 + random.randint(1, 5)
-            print(f"  Attempt {attempt+1} failed: {e}. Waiting {wait}s...")
+            wait = 2 ** attempt * 3 + random.randint(1, 3)
+            print(f"  Retry {attempt+1}: {e}. Waiting {wait}s...")
             time.sleep(wait)
     return None
 
-def classify_cafe(name, tags):
-    name_lower = name.lower() if name else ""
-    
-    # Chain detection
-    chain_keywords = [
-        "starbucks", "dunkin", "coffee bean & tea leaf", "the coffee bean",
-        "seattle's best", "figaro", "ucc coffee", "toby's estate",
-        "st. marc", "coffee project", "kuppa", "bo's coffee", "bos coffee",
-        "wildflour", "tim hortons", "mcdonald's", "mc cafe", "mccafe",
-        "lotteria", "minisop", "the brew shop", "caravan coffee",
-        "seattle's best", "coffee bean", "starbucks reserve",
-    ]
-    for kw in chain_keywords:
-        if kw in name_lower:
+def classify(name, tags):
+    n = name.lower() if name else ""
+    chains = ["starbucks", "dunkin", "coffee bean", "seattle's best", "figaro",
+              "toby's estate", "coffee project", "bo's coffee", "tim hortons",
+              "mccafe", "wildflour"]
+    for kw in chains:
+        if kw in n:
             return "Chain"
-    
-    # Specialty detection
-    specialty_keywords = [
-        "specialty", "artisan", "single origin", "third wave", "pour over",
-        "roaster", "micro-roastery", "microroastery", "craft coffee",
-        "specialty coffee", "yardstick", "habitual", "the curator",
-        "commune", "chapter coffee",
-    ]
-    for kw in specialty_keywords:
-        if kw in name_lower:
+    specialty = ["specialty", "artisan", "roaster", "pour over", "single origin"]
+    for kw in specialty:
+        if kw in n:
             return "Specialty"
-    
-    # Bakery detection
-    bakery_keywords = ["bakery", "bakery cafe", "bread", "pastry", "bakeshop",
-                       "patisserie", "yamato bakery"]
-    for kw in bakery_keywords:
-        if kw in name_lower:
+    bakery = ["bakery", "pastry", "bakeshop", "patisserie"]
+    for kw in bakery:
+        if kw in n:
             return "Bakery"
-    
-    # Check OSM tags
-    if tags:
-        cuisine = (tags.get("cuisine", "") or "").lower()
-        if "specialty" in cuisine:
-            return "Specialty"
-    
     return "Local"
 
-def generate_rating(name, category):
-    base = random.Random(name).uniform(3.0, 5.0)
-    if category == "Specialty":
-        base = max(base, 4.0)
-    if category == "Chain":
-        base = max(3.5, min(base, 4.6))
-    return round(base, 1)
-
-def extract_location(element):
-    tags = element.get("tags", {})
+def extract(el):
+    tags = el.get("tags", {})
     name = tags.get("name", "").strip()
     if not name:
         return None
-    
-    # Skip non-coffee places
-    name_lower = name.lower()
-    skip_keywords = ["restaurant", "bar ", " pub", "night", "club", "karaoke",
-                     "hotel", "resort", "inn ", "lodge", "hostel", "spa",
-                     "gym", "fitness", "salon", "barber", "laundry", "pharmacy",
-                     "clinic", "school", "university", "college", "church",
-                     "temple", "mosque", "bank", "office", "store", "shop",
-                     "market", "supermarket", "grocer"]
-    for kw in skip_keywords:
-        if kw in name_lower:
+    n = name.lower()
+
+    skip = ["restaurant", "hotel", "resort", "karaoke", "night club",
+            "pharmacy", "clinic", "school", "university", "church",
+            "temple", "mosque", "bank"]
+    for kw in skip:
+        if kw in n:
             return None
-    
-    addr_parts = []
-    for key in ["addr:housenumber", "addr:street", "addr:barangay",
-                "addr:city", "addr:municipality", "addr:province"]:
-        val = tags.get(key, "").strip()
-        if val:
-            addr_parts.append(val)
-    address = ", ".join(addr_parts) if addr_parts else name
-    
-    lat = element.get("lat") or (element.get("center", {}).get("lat"))
-    lng = element.get("lon") or (element.get("center", {}).get("lon"))
+
+    addr = ", ".join(filter(None, [tags.get(k, "").strip() for k in
+        ["addr:housenumber", "addr:street", "addr:barangay", "addr:city"]])) or name
+
+    lat = el.get("lat") or (el.get("center", {}).get("lat"))
+    lng = el.get("lon") or (el.get("center", {}).get("lon"))
     if lat is None or lng is None:
         return None
-    
-    category = classify_cafe(name, tags)
-    rating = generate_rating(name, category)
-    
-    # Capture extra fields from OSM tags
-    image = None
-    opening_hours = None
-    phone = None
-    website = None
-    wifi = None
-    outdoor = None
-    parking = None
-    wheelchair = None
-    if tags:
-        img = tags.get("image", "").strip()
-        if img and ("http" in img or "wikimedia" in img):
-            image = img
-        oh = tags.get("opening_hours", "").strip()
-        if oh:
-            opening_hours = oh[:200]
-        ph = tags.get("phone", "") or tags.get("contact:phone", "")
-        if ph:
-            phone = ph.strip()[:50]
-        wb = tags.get("website", "") or tags.get("contact:website", "") or tags.get("url", "")
-        if wb:
-            website = wb.strip()[:200]
-        wf = (tags.get("wifi", "") or tags.get("internet_access", "")).strip().lower()
-        if wf and wf not in ("no", "none", ""):
-            wifi = wf[:20]
-        os_ = tags.get("outdoor_seating", "").strip().lower()
-        if os_ == "yes" or os_ == "true":
-            outdoor = "yes"
-        pk = tags.get("parking", "").strip().lower()
-        if pk and pk != "no":
-            parking = "yes"
-        wc = tags.get("wheelchair", "").strip().lower()
-        if wc and wc != "no":
-            wheelchair = "yes"
-    
-    description_map = {
-        "Chain": "Popular coffee chain serving your favorite espresso drinks, frappuccinos, and pastries in a familiar setting",
-        "Local": "Cozy neighborhood cafe with a warm atmosphere, great coffee, and a welcoming community vibe",
-        "Bakery": "Bakery and cafe offering fresh-baked goods, artisanal pastries, and premium coffee pairings",
-        "Specialty": "Specialty coffee shop dedicated to the art of precision-brewed coffee using single-origin beans",
-    }
-    
+
+    cat = classify(name, tags)
+    rating = round(random.Random(name).uniform(3.0, 5.0), 1)
+
     return {
-        "name": name[:100],
-        "address": address[:200],
-        "lat": round(lat, 6),
-        "lng": round(lng, 6),
-        "category": category,
-        "description": description_map.get(category, "Coffee shop serving hot and cold beverages"),
-        "rating": rating,
-        "image": image,
-        "opening_hours": opening_hours,
-        "phone": phone,
-        "website": website,
-        "wifi": wifi,
-        "outdoor_seating": outdoor,
-        "parking": parking,
-        "wheelchair": wheelchair,
+        "name": name[:100], "address": addr[:200],
+        "lat": round(lat, 6), "lng": round(lng, 6),
+        "category": cat, "rating": rating,
+        "opening_hours": (tags.get("opening_hours") or "")[:200] or None,
+        "phone": (tags.get("phone") or tags.get("contact:phone") or "")[:50] or None,
+        "website": (tags.get("website") or tags.get("contact:website") or "")[:200] or None,
     }
 
-def deduplicate(locations, proximity_km=0.05):
-    """Remove duplicates by name similarity and proximity."""
+def dedup(locs):
     seen = set()
-    unique = []
-    for loc in sorted(locations, key=lambda x: -x["rating"]):
-        key = (
-            loc["name"].lower().strip(),
-            round(loc["lat"], 3),
-            round(loc["lng"], 3),
-        )
+    out = []
+    for loc in sorted(locs, key=lambda x: -x["rating"]):
+        key = (loc["name"].lower().strip(), round(loc["lat"], 3), round(loc["lng"], 3))
         if key not in seen:
             seen.add(key)
-            unique.append(loc)
-    return unique
+            out.append(loc)
+    return out
+
+def load_existing(path):
+    if os.path.exists(path):
+        with open(path, "r", encoding="utf-8") as f:
+            return json.load(f)
+    return []
 
 def main():
-    all_locations = []
-    region_raw = {}
-    
-    existing_path = os.path.join(os.path.dirname(__file__),
-                                 "Healthier", "src", "data", "phCafes.json")
     data_dir = os.path.join(os.path.dirname(__file__),
-                            "Healthier", "public", "data")
-    os.makedirs(data_dir, exist_ok=True)
-    
+        "Healthier", "public", "data")
+    existing_path = os.path.join(os.path.dirname(__file__),
+        "Healthier", "src", "data", "phCafes.json")
+
+    # Load existing region index
+    index_path = os.path.join(data_dir, "region-index.json")
+    all_regions = load_existing(index_path)
+
+    new_luzon = {}
+
     for i, region in enumerate(REGIONS):
-        print(f"[{i+1}/{len(REGIONS)}] Fetching {region['name']}...")
-        south, west, north, east = region["bbox"]
-        result = fetch_region(south, west, north, east)
-        
-        if result is None:
-            print(f"  FAILED after retries")
+        name = region["name"]
+        print(f"[{i+1}/{len(REGIONS)}] {name}...")
+        s, w, n, e = region["bbox"]
+        result = fetch_region(s, w, n, e)
+        if not result:
+            print(f"  FAILED — keeping existing data")
             continue
-        
+
         elements = result.get("elements", [])
         print(f"  Got {len(elements)} elements")
-        
+
         region_locs = []
         for el in elements:
-            loc = extract_location(el)
+            loc = extract(el)
             if loc:
-                loc["region"] = region["name"]
+                loc["region"] = name
                 region_locs.append(loc)
-                all_locations.append(loc)
-        
-        region_raw[region["name"]] = region_locs
-        time.sleep(1)
-    
+
+        print(f"  Found {len(region_locs)} coffee shops")
+        new_luzon[name] = region_locs
+        time.sleep(2)
+
+    # Build full dataset: new Luzon + existing other regions
+    all_locs = []
+    for r in all_regions:
+        rname = r["name"]
+        if rname in new_luzon:
+            # Use newly fetched data
+            for loc in new_luzon[rname]:
+                all_locs.append(loc)
+        else:
+            # Keep existing region data
+            existing = load_existing(os.path.join(data_dir, f"{rname}.json"))
+            for loc in existing:
+                loc["region"] = rname
+                all_locs.append(loc)
+
     # Global sort + dedup
-    all_locations.sort(key=lambda x: x["name"].lower())
-    all_locations = deduplicate(all_locations)
-    
-    for i, loc in enumerate(all_locations):
+    all_locs.sort(key=lambda x: x["name"].lower())
+    before = len(all_locs)
+    all_locs = dedup(all_locs)
+    print(f"\nDedup: {before} -> {len(all_locs)}")
+
+    for i, loc in enumerate(all_locs):
         loc["id"] = i + 1
-    
-    # Re-split into regions by region field
-    region_final = {r["name"]: [] for r in REGIONS}
-    for loc in all_locations:
+
+    # Re-split into regions
+    region_final = {}
+    for r in all_regions:
+        region_final[r["name"]] = []
+    for loc in all_locs:
         r = loc.pop("region", None)
         if r in region_final:
             region_final[r].append(loc)
-    
-    # Save individual region files to public/data/ (with IDs)
-    for region in REGIONS:
-        locs = region_final[region["name"]]
-        region_file = os.path.join(data_dir, f"{region['name']}.json")
+
+    # Save updated Luzon region files + untouched other regions
+    for r in all_regions:
+        rname = r["name"]
+        locs = region_final.get(rname, [])
+        region_file = os.path.join(data_dir, f"{rname}.json")
         with open(region_file, "w", encoding="utf-8") as f:
             json.dump(locs, f, ensure_ascii=False, indent=2)
-        print(f"  Saved {len(locs)} to {region_file}")
-    
-    # Save region index
-    region_index = []
-    for region in REGIONS:
-        locs = region_final[region["name"]]
-        region_index.append({
-            "name": region["name"],
-            "bbox": region["bbox"],
-            "count": len(locs),
-        })
-    index_file = os.path.join(data_dir, "region-index.json")
-    with open(index_file, "w", encoding="utf-8") as f:
-        json.dump(region_index, f, ensure_ascii=False, indent=2)
-    print(f"Saved region index to {index_file}")
-    
-    # Save combined file (fallback / static import)
-    tmp_path = existing_path + ".tmp"
-    with open(tmp_path, "w", encoding="utf-8") as f:
-        json.dump(all_locations, f, ensure_ascii=False, indent=2)
-    os.replace(tmp_path, existing_path)
-    
-    print(f"\nTotal unique locations: {len(all_locations)}")
-    
+
+    # Update region index with new counts
+    for r in all_regions:
+        rname = r["name"]
+        r["count"] = len(region_final.get(rname, []))
+    with open(index_path, "w", encoding="utf-8") as f:
+        json.dump(all_regions, f, ensure_ascii=False, indent=2)
+    print(f"Updated region index")
+
+    # Save combined file
+    tmp = existing_path + ".tmp"
+    with open(tmp, "w", encoding="utf-8") as f:
+        json.dump(all_locs, f, ensure_ascii=False, indent=2)
+    os.replace(tmp, existing_path)
+
+    print(f"\nTotal unique: {len(all_locs)}")
+
     cats = {}
-    for loc in all_locations:
+    for loc in all_locs:
         cats[loc["category"]] = cats.get(loc["category"], 0) + 1
     print(f"Categories: {cats}")
-    
-    chain_counts = {}
-    for loc in all_locations:
-        if loc["category"] == "Chain":
-            base = loc["name"].split("(")[0].strip()
-            chain_counts[base] = chain_counts.get(base, 0) + 1
-    print(f"Top chains: {dict(sorted(chain_counts.items(), key=lambda x: -x[1])[:20])}")
-    
-    print(f"Saved combined to {existing_path}")
 
 if __name__ == "__main__":
     main()

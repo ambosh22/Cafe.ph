@@ -82,11 +82,6 @@ export default function LocationCard({
     else { try { await navigator.clipboard.writeText(`${location.name} — ${location.address}`); } catch { /* */ } }
   };
 
-  const amenities: { label: string; icon: string }[] = [];
-  if (location.wifi) amenities.push({ label: "WiFi", icon: "📶" });
-  if (location.outdoor_seating) amenities.push({ label: "Outdoor", icon: "🌿" });
-  if (location.wheelchair) amenities.push({ label: "Accessible", icon: "♿" });
-
   return (
     <div className="location-card" role="dialog" aria-label={location.name}>
       <button className="close-btn" onClick={onClose} aria-label="Close">✕</button>
@@ -101,9 +96,11 @@ export default function LocationCard({
       <div className="card-content">
         <div className="card-row">
           <span className="card-category">{location.category}</span>
-          {status && <span className={`card-status ${status.className}`}>{status.label}</span>}
         </div>
-        <h2>{location.name}</h2>
+        <h2>
+          {location.name}
+          {status && <span className={`card-status-inline ${status.className}`}>{status.label}</span>}
+        </h2>
         <div className="rating" aria-label={`${location.rating} out of 5 stars`}>
           {"★".repeat(stars)}{"☆".repeat(5 - stars)}
           <span className="rating-num">{location.rating}</span>
@@ -116,33 +113,15 @@ export default function LocationCard({
         </p>
         <p className="description">{location.description}</p>
 
-        {amenities.length > 0 && (
-          <div className="card-amenities">
-            {amenities.map((a) => (
-              <span key={a.label} className="amenity-tag">{a.icon} {a.label}</span>
-            ))}
-          </div>
-        )}
-
-        {(location.phone || location.website) && (
+        {location.website && (
           <div className="card-contact">
-            {location.phone && (
-              <a href={`tel:${location.phone}`} className="contact-link">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
-                </svg>
-                {location.phone}
-              </a>
-            )}
-            {location.website && (
-              <a href={location.website} target="_blank" rel="noopener noreferrer" className="contact-link">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <circle cx="12" cy="12" r="10" /><line x1="2" y1="12" x2="22" y2="12" />
-                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
-                </svg>
-                Website
-              </a>
-            )}
+            <a href={location.website} target="_blank" rel="noopener noreferrer" className="contact-link">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <circle cx="12" cy="12" r="10" /><line x1="2" y1="12" x2="22" y2="12" />
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+              </svg>
+              Website
+            </a>
           </div>
         )}
 

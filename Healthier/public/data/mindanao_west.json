@@ -15,7 +15,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 294
+    "id": 297
   },
   {
     "name": "Dianta Cafe",
@@ -33,7 +33,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 967
+    "id": 989
   },
   {
     "name": "Villagio Cafe",
@@ -51,7 +51,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1186
+    "id": 1195
   },
   {
     "name": "Black Scoop Cafe",
@@ -69,7 +69,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1232
+    "id": 1241
   },
   {
     "name": "Bigbrew Talon-Talon",
@@ -87,7 +87,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1425
+    "id": 1441
   },
   {
     "name": "MaCha Milk Tea",
@@ -105,7 +105,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1581
+    "id": 1598
   },
   {
     "name": "Viandas Refreshment",
@@ -123,7 +123,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1682
+    "id": 1699
   },
   {
     "name": "Tom n Toms Coffee",
@@ -141,7 +141,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1953
+    "id": 1973
   },
   {
     "name": "Cassy's Sweet Bites & Grill",
@@ -159,7 +159,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2022
+    "id": 2043
   },
   {
     "name": "Dennis Coffee Garden",
@@ -177,7 +177,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2053
+    "id": 2074
   },
   {
     "name": "Kofenated",
@@ -195,7 +195,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2093
+    "id": 2116
   },
   {
     "name": "Moms Cheesecake",
@@ -213,7 +213,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2403
+    "id": 2428
   },
   {
     "name": "Brew and Bake",
@@ -231,7 +231,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2843
+    "id": 2868
   },
   {
     "name": "Cafe Corner",
@@ -249,7 +249,7 @@
     "outdoor_seating": "yes",
     "parking": null,
     "wheelchair": null,
-    "id": 2854
+    "id": 2879
   },
   {
     "name": "Tsokolate by Linfood",
@@ -267,7 +267,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 3249
+    "id": 3279
   },
   {
     "name": "Seattle's Best Coffee",
@@ -285,7 +285,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 3492
+    "id": 3522
   },
   {
     "name": "Akats Tea",
@@ -303,7 +303,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4160
+    "id": 4195
   },
   {
     "name": "Bo's Coffee",
@@ -321,7 +321,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4235
+    "id": 4260
   },
   {
     "name": "Dwntwn Café",
@@ -339,7 +339,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4308
+    "id": 4333
   },
   {
     "name": "Tsokolate",
@@ -357,7 +357,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4542
+    "id": 4556
   },
   {
     "name": "Jelly Citea",
@@ -375,7 +375,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4678
+    "id": 4704
   },
   {
     "name": "I love ice cream",
@@ -393,7 +393,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4919
+    "id": 4955
   },
   {
     "name": "Balite Drive",
@@ -411,7 +411,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 5020
+    "id": 5057
   },
   {
     "name": "Chatime",
@@ -429,7 +429,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 5089
+    "id": 5126
   },
   {
     "name": "Inkafé",
@@ -447,7 +447,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 5156
+    "id": 5193
   },
   {
     "name": "Kakes and Kreams",
@@ -465,7 +465,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 5564
+    "id": 5607
   },
   {
     "name": "La Pergola Cafe",
@@ -483,6 +483,6 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 5570
+    "id": 5613
   }
 ]

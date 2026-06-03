@@ -40,12 +40,16 @@ function MapController({
   hasSelectedLocation: boolean;
 }) {
   const map = useMap();
+  const initial = useRef(true);
   useEffect(() => {
+    if (initial.current) {
+      initial.current = false;
+      if (!locationDenied) map.setView([14.558, 121.025], 12);
+      return;
+    }
     if (hasSelectedLocation) return;
     if (userLocation) {
       map.flyTo([userLocation.lat, userLocation.lng], 14, { duration: 1.5 });
-    } else if (!locationDenied) {
-      map.setView([14.558, 121.025], 12, { animate: true, duration: 1 });
     }
   }, [userLocation, locationDenied, hasSelectedLocation, map]);
   return null;

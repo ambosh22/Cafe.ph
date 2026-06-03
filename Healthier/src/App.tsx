@@ -236,6 +236,7 @@ export default function App() {
       alert("Geolocation is not supported");
       return;
     }
+    setSelectedLocation(null);
     setLocationLoading(true);
     navigator.geolocation.getCurrentPosition(
       (pos) => {
@@ -275,10 +276,6 @@ export default function App() {
 
     return result;
   }, [locations, searchQuery, userLocation, favorites, activeTab, sortOpenOnly]);
-
-  const trendingLocations = useMemo(() => {
-    return [...locations].sort((a, b) => b.rating - a.rating).slice(0, 10);
-  }, [locations]);
 
   const handleNavigate = (loc: Location) => {
     const origin = userLocation ? `&origin=${userLocation.lat},${userLocation.lng}` : "";

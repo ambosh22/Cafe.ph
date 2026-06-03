@@ -15,7 +15,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 9
+    "id": 10
   },
   {
     "name": "Cafe Chalet",
@@ -33,7 +33,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 19
+    "id": 20
   },
   {
     "name": "CatFeteria",
@@ -51,7 +51,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 30
+    "id": 31
   },
   {
     "name": "Des-Tea-Ny",
@@ -69,7 +69,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 44
+    "id": 45
   },
   {
     "name": "Juice Cubi",
@@ -87,7 +87,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 62
+    "id": 63
   },
   {
     "name": "Kape Boss",
@@ -105,7 +105,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 66
+    "id": 67
   },
   {
     "name": "Kape Boss",
@@ -123,7 +123,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 67
+    "id": 68
   },
   {
     "name": "Kapepiliin",
@@ -141,7 +141,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 68
+    "id": 69
   },
   {
     "name": "Meetingpoint Cafe",
@@ -159,7 +159,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 81
+    "id": 82
   },
   {
     "name": "Seventh Street Coffee",
@@ -177,7 +177,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 94
+    "id": 96
   },
   {
     "name": "The Colonel's Coffee",
@@ -195,7 +195,7 @@
     "outdoor_seating": "yes",
     "parking": null,
     "wheelchair": null,
-    "id": 105
+    "id": 107
   },
   {
     "name": "A Zen Cafe",
@@ -213,7 +213,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 115
+    "id": 118
   },
   {
     "name": "Bandejas Cafe, Diner, & Food Trays",
@@ -231,7 +231,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 125
+    "id": 128
   },
   {
     "name": "Biaño’s Pizzaria",
@@ -249,7 +249,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 128
+    "id": 131
   },
   {
     "name": "Breads and Blends",
@@ -267,7 +267,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": "yes",
-    "id": 131
+    "id": 134
   },
   {
     "name": "Cafe Nauticca",
@@ -285,7 +285,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 146
+    "id": 149
   },
   {
     "name": "Cafe Saavedra's",
@@ -303,7 +303,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 149
+    "id": 152
   },
   {
     "name": "Cafe Verdania",
@@ -321,7 +321,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 151
+    "id": 154
   },
   {
     "name": "Chiru Cafe",
@@ -339,7 +339,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 164
+    "id": 167
   },
   {
     "name": "Coffee for Health",
@@ -357,7 +357,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 198
+    "id": 201
   },
   {
     "name": "Coffee Hub",
@@ -375,7 +375,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 200
+    "id": 203
   },
   {
     "name": "Den's Cafe",
@@ -393,7 +393,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 215
+    "id": 218
   },
   {
     "name": "Deo's Kapehan",
@@ -411,7 +411,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 216
+    "id": 219
   },
   {
     "name": "Good One",
@@ -429,7 +429,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 234
+    "id": 237
   },
   {
     "name": "Kape Kape sa Bundok",
@@ -447,7 +447,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 257
+    "id": 260
   },
   {
     "name": "Kape Ora",
@@ -465,7 +465,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 258
+    "id": 261
   },
   {
     "name": "Krawd Coffee",
@@ -483,7 +483,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 267
+    "id": 270
   },
   {
     "name": "Lazaro's Cafe",
@@ -501,7 +501,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 274
+    "id": 277
   },
   {
     "name": "Mac Alister's",
@@ -519,7 +519,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 279
+    "id": 282
   },
   {
     "name": "Mamertos' Cafe",
@@ -537,7 +537,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 282
+    "id": 285
   },
   {
     "name": "Mombakes",
@@ -555,7 +555,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 291
+    "id": 294
   },
   {
     "name": "Northeast Point",
@@ -573,7 +573,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 297
+    "id": 300
   },
   {
     "name": "Pablo & Estela Bistro Cafe",
@@ -591,7 +591,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 299
+    "id": 302
   },
   {
     "name": "Samoa Tsokolate",
@@ -609,7 +609,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 309
+    "id": 312
   },
   {
     "name": "Sweetdreams",
@@ -627,7 +627,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 325
+    "id": 328
   },
   {
     "name": "The Cafeteria",
@@ -645,7 +645,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 331
+    "id": 335
   },
   {
     "name": "The Coffee Company",
@@ -663,7 +663,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 333
+    "id": 337
   },
   {
     "name": "The Turq Cafe",
@@ -681,7 +681,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 336
+    "id": 340
   },
   {
     "name": "Tia Nina Pizza and Pasta",
@@ -699,7 +699,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 338
+    "id": 342
   },
   {
     "name": "UF",
@@ -717,7 +717,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 351
+    "id": 355
   },
   {
     "name": "Amara Cafe",
@@ -735,7 +735,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 368
+    "id": 372
   },
   {
     "name": "At Curbside",
@@ -753,7 +753,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 369
+    "id": 373
   },
   {
     "name": "BesTea Milktea",
@@ -771,7 +771,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 380
+    "id": 384
   },
   {
     "name": "Bistro La Camille",
@@ -789,7 +789,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 385
+    "id": 389
   },
   {
     "name": "Brat Coffee & Merchs",
@@ -807,7 +807,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 392
+    "id": 396
   },
   {
     "name": "Brownies and Co",
@@ -825,7 +825,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 396
+    "id": 400
   },
   {
     "name": "Bya's Cafe",
@@ -843,7 +843,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 398
+    "id": 402
   },
   {
     "name": "Chang Tea",
@@ -861,7 +861,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 427
+    "id": 431
   },
   {
     "name": "Clarisa's Cafeteria",
@@ -879,7 +879,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 432
+    "id": 436
   },
   {
     "name": "Corners Cafe",
@@ -897,7 +897,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 444
+    "id": 454
   },
   {
     "name": "D'Urban Cafe",
@@ -915,7 +915,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 450
+    "id": 460
   },
   {
     "name": "Dabig C Coffee",
@@ -933,7 +933,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 451
+    "id": 461
   },
   {
     "name": "Dash Coffee",
@@ -951,7 +951,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 453
+    "id": 463
   },
   {
     "name": "Dash Coffee",
@@ -969,7 +969,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 454
+    "id": 464
   },
   {
     "name": "Elixr",
@@ -987,7 +987,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 459
+    "id": 474
   },
   {
     "name": "Habitat Specialty Coffee",
@@ -1005,7 +1005,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 473
+    "id": 495
   },
   {
     "name": "Happy 21",
@@ -1023,7 +1023,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 478
+    "id": 500
   },
   {
     "name": "Hid'n Coffee",
@@ -1041,7 +1041,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 482
+    "id": 504
   },
   {
     "name": "Highway 23",
@@ -1059,7 +1059,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 484
+    "id": 506
   },
   {
     "name": "Maia's Cafe",
@@ -1077,7 +1077,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 513
+    "id": 536
   },
   {
     "name": "Mamz Recipe",
@@ -1095,7 +1095,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 515
+    "id": 538
   },
   {
     "name": "Purple Bean",
@@ -1113,7 +1113,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 541
+    "id": 565
   },
   {
     "name": "Raz Cafe",
@@ -1131,7 +1131,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 544
+    "id": 568
   },
   {
     "name": "Seka Foods and Grill",
@@ -1149,7 +1149,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 555
+    "id": 579
   },
   {
     "name": "Shake'NTea",
@@ -1167,7 +1167,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 558
+    "id": 582
   },
   {
     "name": "Smacks Bistro",
@@ -1185,7 +1185,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 561
+    "id": 585
   },
   {
     "name": "Sudapin Coffee",
@@ -1203,7 +1203,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 564
+    "id": 588
   },
   {
     "name": "Barrio",
@@ -1221,7 +1221,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 604
+    "id": 628
   },
   {
     "name": "Cafe de Haz",
@@ -1239,7 +1239,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 619
+    "id": 643
   },
   {
     "name": "Cafe Tadeo",
@@ -1257,7 +1257,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 626
+    "id": 650
   },
   {
     "name": "Cafein",
@@ -1275,7 +1275,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 628
+    "id": 652
   },
   {
     "name": "Cafeñeros",
@@ -1293,7 +1293,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 629
+    "id": 653
   },
   {
     "name": "Chicco Di Cafe",
@@ -1311,7 +1311,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 643
+    "id": 667
   },
   {
     "name": "Ching's Resto Caffee",
@@ -1329,7 +1329,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 644
+    "id": 668
   },
   {
     "name": "Coffee Co.",
@@ -1347,7 +1347,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 646
+    "id": 670
   },
   {
     "name": "Coy's Cafe and Bar",
@@ -1365,7 +1365,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 658
+    "id": 682
   },
   {
     "name": "Fagioli's",
@@ -1383,7 +1383,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 671
+    "id": 695
   },
   {
     "name": "Felritz Cafe",
@@ -1401,7 +1401,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 673
+    "id": 697
   },
   {
     "name": "Freewilly 198",
@@ -1419,7 +1419,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 682
+    "id": 706
   },
   {
     "name": "Henrich",
@@ -1437,7 +1437,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 689
+    "id": 713
   },
   {
     "name": "Infinitea",
@@ -1455,7 +1455,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 715
+    "id": 739
   },
   {
     "name": "Infinitea",
@@ -1473,7 +1473,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": "yes",
-    "id": 716
+    "id": 740
   },
   {
     "name": "Laysa's BBQ Grill & Project IB",
@@ -1491,7 +1491,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 735
+    "id": 760
   },
   {
     "name": "Lerus Coffee",
@@ -1509,7 +1509,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 738
+    "id": 763
   },
   {
     "name": "Madame Kope",
@@ -1527,7 +1527,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 744
+    "id": 769
   },
   {
     "name": "Mainstay Coffee",
@@ -1545,7 +1545,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 747
+    "id": 772
   },
   {
     "name": "Majestea Cafe",
@@ -1563,7 +1563,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 748
+    "id": 773
   },
   {
     "name": "Milco Milk Tea",
@@ -1581,7 +1581,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 752
+    "id": 777
   },
   {
     "name": "Mr. Wen Cafe",
@@ -1599,7 +1599,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 755
+    "id": 781
   },
   {
     "name": "North Deck Sinawal",
@@ -1617,7 +1617,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 761
+    "id": 787
   },
   {
     "name": "OrganiKian Café",
@@ -1635,7 +1635,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 767
+    "id": 793
   },
   {
     "name": "Prokrate International",
@@ -1653,7 +1653,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 775
+    "id": 801
   },
   {
     "name": "Queen's Milktealicious",
@@ -1671,7 +1671,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 778
+    "id": 804
   },
   {
     "name": "Rainforest Cafe",
@@ -1689,7 +1689,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 780
+    "id": 806
   },
   {
     "name": "Sky Go Cafe",
@@ -1707,7 +1707,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 792
+    "id": 818
   },
   {
     "name": "Sugar Munch Desserts",
@@ -1725,7 +1725,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 797
+    "id": 824
   },
   {
     "name": "Tea Heaven",
@@ -1743,7 +1743,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 808
+    "id": 835
   },
   {
     "name": "The Cozy Cup",
@@ -1761,7 +1761,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 815
+    "id": 842
   },
   {
     "name": "Tilapips",
@@ -1779,7 +1779,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 823
+    "id": 850
   },
   {
     "name": "Wood and Coffee",
@@ -1797,7 +1797,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 834
+    "id": 861
   },
   {
     "name": "&Matcha",
@@ -1815,7 +1815,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 841
+    "id": 868
   },
   {
     "name": "10,000 Reasons",
@@ -1833,7 +1833,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 843
+    "id": 870
   },
   {
     "name": "Anlocotan",
@@ -1851,7 +1851,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 853
+    "id": 881
   },
   {
     "name": "Anniepie",
@@ -1869,7 +1869,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 854
+    "id": 882
   },
   {
     "name": "Blu Gre Cafe",
@@ -1887,7 +1887,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 874
+    "id": 902
   },
   {
     "name": "Cafe France",
@@ -1905,7 +1905,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 897
+    "id": 925
   },
   {
     "name": "Cafe France",
@@ -1923,7 +1923,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 898
+    "id": 926
   },
   {
     "name": "Cherdon'z Kapehan",
@@ -1941,7 +1941,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 914
+    "id": 942
   },
   {
     "name": "Coffee Project",
@@ -1959,7 +1959,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 953
+    "id": 975
   },
   {
     "name": "Coffee Project",
@@ -1977,7 +1977,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 954
+    "id": 976
   },
   {
     "name": "Cucina De Juana",
@@ -1995,7 +1995,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 963
+    "id": 985
   },
   {
     "name": "Davao Macchiato",
@@ -2013,7 +2013,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 964
+    "id": 986
   },
   {
     "name": "Destiny's Hub",
@@ -2031,7 +2031,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 966
+    "id": 988
   },
   {
     "name": "Dunkin Donuts",
@@ -2049,7 +2049,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 983
+    "id": 1005
   },
   {
     "name": "Dunkin' Donuts",
@@ -2067,7 +2067,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1004
+    "id": 1021
   },
   {
     "name": "Dunkin' Donuts",
@@ -2085,7 +2085,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1005
+    "id": 1022
   },
   {
     "name": "Dunkin' Donuts",
@@ -2103,7 +2103,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1006
+    "id": 1023
   },
   {
     "name": "Dunkin' Donuts",
@@ -2121,7 +2121,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1007
+    "id": 1024
   },
   {
     "name": "Ferramenta Cafe",
@@ -2139,7 +2139,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1014
+    "id": 1031
   },
   {
     "name": "Figaro",
@@ -2157,7 +2157,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1044
+    "id": 1054
   },
   {
     "name": "Habi at Kape",
@@ -2175,7 +2175,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": "yes",
-    "id": 1059
+    "id": 1069
   },
   {
     "name": "Hannukah Chai",
@@ -2193,7 +2193,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1060
+    "id": 1070
   },
   {
     "name": "Kaffeeneology",
@@ -2211,7 +2211,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1072
+    "id": 1082
   },
   {
     "name": "Kekeng Palanca Kapihan",
@@ -2229,7 +2229,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1080
+    "id": 1090
   },
   {
     "name": "Kobe Kopi",
@@ -2247,7 +2247,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1084
+    "id": 1094
   },
   {
     "name": "Ligan Internet Cafe",
@@ -2265,7 +2265,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1091
+    "id": 1101
   },
   {
     "name": "Little Miss Tea",
@@ -2283,7 +2283,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1092
+    "id": 1102
   },
   {
     "name": "Overview Cafe",
@@ -2301,7 +2301,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1119
+    "id": 1129
   },
   {
     "name": "Rangayen Coffee",
@@ -2319,7 +2319,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1127
+    "id": 1137
   },
   {
     "name": "Roadhouse Cafe",
@@ -2337,7 +2337,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1134
+    "id": 1144
   },
   {
     "name": "Sophia Coffee & Breakfast",
@@ -2355,7 +2355,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1154
+    "id": 1164
   },
   {
     "name": "Spilled Coffee",
@@ -2373,7 +2373,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1155
+    "id": 1165
   },
   {
     "name": "Surge",
@@ -2391,7 +2391,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1160
+    "id": 1169
   },
   {
     "name": "Tata Benitos",
@@ -2409,7 +2409,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1162
+    "id": 1171
   },
   {
     "name": "Tazza Verde",
@@ -2427,7 +2427,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1163
+    "id": 1172
   },
   {
     "name": "Tea'amo Cafe",
@@ -2445,7 +2445,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1165
+    "id": 1174
   },
   {
     "name": "Teakim Bubble Cafe'",
@@ -2463,7 +2463,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1166
+    "id": 1175
   },
   {
     "name": "The Basic Tea Cafe",
@@ -2481,7 +2481,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1168
+    "id": 1177
   },
   {
     "name": "Thirty Third Café",
@@ -2499,7 +2499,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1174
+    "id": 1183
   },
   {
     "name": "Wait & Chill",
@@ -2517,7 +2517,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1187
+    "id": 1196
   },
   {
     "name": "We Got Cha!",
@@ -2535,7 +2535,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1188
+    "id": 1197
   },
   {
     "name": "Annipie",
@@ -2553,7 +2553,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": "yes",
-    "id": 1197
+    "id": 1206
   },
   {
     "name": "Annipie",
@@ -2571,7 +2571,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1198
+    "id": 1207
   },
   {
     "name": "Annipie",
@@ -2589,7 +2589,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1199
+    "id": 1208
   },
   {
     "name": "Annipie",
@@ -2607,7 +2607,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1200
+    "id": 1209
   },
   {
     "name": "Annipie",
@@ -2625,7 +2625,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": "yes",
-    "id": 1201
+    "id": 1210
   },
   {
     "name": "Apo Cafe",
@@ -2643,7 +2643,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1202
+    "id": 1211
   },
   {
     "name": "Aulson's Cafe",
@@ -2661,7 +2661,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1204
+    "id": 1213
   },
   {
     "name": "Basti's Brew",
@@ -2679,7 +2679,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1208
+    "id": 1217
   },
   {
     "name": "Black Scoop Cafe",
@@ -2697,7 +2697,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1231
+    "id": 1240
   },
   {
     "name": "Brewstic",
@@ -2715,7 +2715,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1235
+    "id": 1244
   },
   {
     "name": "Bros Brew",
@@ -2733,7 +2733,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1237
+    "id": 1246
   },
   {
     "name": "Cafe Demitasse",
@@ -2751,7 +2751,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1245
+    "id": 1254
   },
   {
     "name": "Cafe Inizio",
@@ -2769,7 +2769,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1247
+    "id": 1256
   },
   {
     "name": "Cafe Inizio",
@@ -2787,7 +2787,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1248
+    "id": 1257
   },
   {
     "name": "Cecil's Snack Inn",
@@ -2805,7 +2805,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1262
+    "id": 1271
   },
   {
     "name": "Conlu's Food Place",
@@ -2823,7 +2823,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1276
+    "id": 1286
   },
   {
     "name": "Daily Grind Coffee",
@@ -2841,7 +2841,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1280
+    "id": 1290
   },
   {
     "name": "Dainty CAFE",
@@ -2859,7 +2859,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1281
+    "id": 1291
   },
   {
     "name": "DARU & CO.",
@@ -2877,7 +2877,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1283
+    "id": 1293
   },
   {
     "name": "Kiel's Coffee",
@@ -2895,7 +2895,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1317
+    "id": 1327
   },
   {
     "name": "Kommunity Cafe",
@@ -2913,7 +2913,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1321
+    "id": 1331
   },
   {
     "name": "Laagan's Cafe",
@@ -2931,7 +2931,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1327
+    "id": 1337
   },
   {
     "name": "Mangostana Cafe",
@@ -2949,7 +2949,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1336
+    "id": 1347
   },
   {
     "name": "Meal La Vogue",
@@ -2967,7 +2967,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1340
+    "id": 1351
   },
   {
     "name": "Psalms Coffee",
@@ -2985,7 +2985,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1356
+    "id": 1369
   },
   {
     "name": "Rigo's Cafe",
@@ -3003,7 +3003,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1359
+    "id": 1372
   },
   {
     "name": "Rio Grande Cafe",
@@ -3021,7 +3021,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1360
+    "id": 1373
   },
   {
     "name": "Silverjade Café",
@@ -3039,7 +3039,7 @@
     "outdoor_seating": "yes",
     "parking": null,
     "wheelchair": null,
-    "id": 1365
+    "id": 1378
   },
   {
     "name": "Sooyop Cafe",
@@ -3057,7 +3057,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1367
+    "id": 1381
   },
   {
     "name": "Tambayan Sikwatea",
@@ -3075,7 +3075,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1374
+    "id": 1389
   },
   {
     "name": "Tea Amor",
@@ -3093,7 +3093,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1375
+    "id": 1390
   },
   {
     "name": "Teastingi",
@@ -3111,7 +3111,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1377
+    "id": 1392
   },
   {
     "name": "Vicky's Cafe",
@@ -3129,7 +3129,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1388
+    "id": 1404
   },
   {
     "name": "Villa Cafe",
@@ -3147,7 +3147,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1389
+    "id": 1405
   },
   {
     "name": "Wax Surf",
@@ -3165,7 +3165,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1391
+    "id": 1407
   },
   {
     "name": "Belen Cafehan",
@@ -3183,7 +3183,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1422
+    "id": 1438
   },
   {
     "name": "Binnamon and Coffee",
@@ -3201,7 +3201,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1426
+    "id": 1442
   },
   {
     "name": "BKLD Cafe",
@@ -3219,7 +3219,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1427
+    "id": 1443
   },
   {
     "name": "Boss Macchiato",
@@ -3237,7 +3237,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1432
+    "id": 1448
   },
   {
     "name": "But First, Coffee",
@@ -3255,7 +3255,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1454
+    "id": 1470
   },
   {
     "name": "Camp Damada",
@@ -3273,7 +3273,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1472
+    "id": 1489
   },
   {
     "name": "Coffee at Yellow Hauz",
@@ -3291,7 +3291,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1480
+    "id": 1497
   },
   {
     "name": "ConnecteaCupz",
@@ -3309,7 +3309,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1486
+    "id": 1503
   },
   {
     "name": "Darkk Coffee Co.",
@@ -3327,7 +3327,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1493
+    "id": 1510
   },
   {
     "name": "Drip Tea",
@@ -3345,7 +3345,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1499
+    "id": 1516
   },
   {
     "name": "Duhaylungsod Cafe",
@@ -3363,7 +3363,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1501
+    "id": 1518
   },
   {
     "name": "Gaming Zone Marbel",
@@ -3381,7 +3381,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1510
+    "id": 1527
   },
   {
     "name": "Gong Cha",
@@ -3399,7 +3399,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1546
+    "id": 1563
   },
   {
     "name": "Gong Cha",
@@ -3417,7 +3417,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1547
+    "id": 1564
   },
   {
     "name": "Ground Zero",
@@ -3435,7 +3435,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1551
+    "id": 1568
   },
   {
     "name": "Humble Table",
@@ -3453,7 +3453,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1555
+    "id": 1572
   },
   {
     "name": "Kopikuys Coffee",
@@ -3471,7 +3471,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1569
+    "id": 1586
   },
   {
     "name": "Kos Beauty Lounge & Cafe",
@@ -3489,7 +3489,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1570
+    "id": 1587
   },
   {
     "name": "Lately Coffee & Pastries",
@@ -3507,7 +3507,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1575
+    "id": 1592
   },
   {
     "name": "Lykke Cafe",
@@ -3525,7 +3525,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1580
+    "id": 1597
   },
   {
     "name": "McDom’s Cafe",
@@ -3543,7 +3543,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1584
+    "id": 1601
   },
   {
     "name": "Ms. Tea",
@@ -3561,7 +3561,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1590
+    "id": 1607
   },
   {
     "name": "MZM Cafe",
@@ -3579,7 +3579,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1591
+    "id": 1608
   },
   {
     "name": "Popong's Internet Cafe",
@@ -3597,7 +3597,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1600
+    "id": 1617
   },
   {
     "name": "Red Beanery",
@@ -3615,7 +3615,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1603
+    "id": 1620
   },
   {
     "name": "Sprinkles",
@@ -3633,7 +3633,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1621
+    "id": 1638
   },
   {
     "name": "Tea Euphoria Cafe",
@@ -3651,7 +3651,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1630
+    "id": 1647
   },
   {
     "name": "Toshiko",
@@ -3669,7 +3669,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1671
+    "id": 1688
   },
   {
     "name": "Wild Zebra Coffee",
@@ -3687,7 +3687,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1689
+    "id": 1706
   },
   {
     "name": "Woodlands Kofihan",
@@ -3705,7 +3705,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1690
+    "id": 1707
   },
   {
     "name": "Xie Xie",
@@ -3723,7 +3723,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1693
+    "id": 1710
   },
   {
     "name": "Yesterdays",
@@ -3741,7 +3741,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1694
+    "id": 1711
   },
   {
     "name": "Amoree Cafe",
@@ -3759,7 +3759,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1706
+    "id": 1723
   },
   {
     "name": "Basti's Cafe",
@@ -3777,7 +3777,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1717
+    "id": 1735
   },
   {
     "name": "Cafe Racer Coffee",
@@ -3795,7 +3795,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1756
+    "id": 1774
   },
   {
     "name": "Casayas Kapihan",
@@ -3813,7 +3813,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1767
+    "id": 1785
   },
   {
     "name": "Craft Coffee - Roastery",
@@ -3831,7 +3831,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1785
+    "id": 1804
   },
   {
     "name": "Daryn's Cafe",
@@ -3849,7 +3849,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1789
+    "id": 1808
   },
   {
     "name": "Dear Coffee",
@@ -3867,7 +3867,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1792
+    "id": 1811
   },
   {
     "name": "Dear Coffee",
@@ -3885,7 +3885,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1793
+    "id": 1812
   },
   {
     "name": "Dear Coffee",
@@ -3903,7 +3903,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1794
+    "id": 1813
   },
   {
     "name": "Dear Coffee",
@@ -3921,7 +3921,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1795
+    "id": 1814
   },
   {
     "name": "Delizioso",
@@ -3939,7 +3939,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1798
+    "id": 1817
   },
   {
     "name": "G&Co. Cafe",
@@ -3957,7 +3957,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1813
+    "id": 1832
   },
   {
     "name": "Grab & Go",
@@ -3975,7 +3975,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1818
+    "id": 1837
   },
   {
     "name": "GRJoy Choice",
@@ -3993,7 +3993,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1820
+    "id": 1839
   },
   {
     "name": "John Tea",
@@ -4011,7 +4011,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1835
+    "id": 1854
   },
   {
     "name": "Keepsakes",
@@ -4029,7 +4029,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1842
+    "id": 1861
   },
   {
     "name": "Keepsakes",
@@ -4047,7 +4047,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1843
+    "id": 1862
   },
   {
     "name": "Koze Cafe",
@@ -4065,7 +4065,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1852
+    "id": 1871
   },
   {
     "name": "KuYa Jay's Fried Bites",
@@ -4083,7 +4083,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1854
+    "id": 1873
   },
   {
     "name": "NB Milktea Ma-a",
@@ -4101,7 +4101,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1883
+    "id": 1902
   },
   {
     "name": "Oye Coffee",
@@ -4119,7 +4119,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1890
+    "id": 1909
   },
   {
     "name": "Palpitate Coffee",
@@ -4137,7 +4137,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1892
+    "id": 1912
   },
   {
     "name": "Pinta Cafe",
@@ -4155,7 +4155,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1895
+    "id": 1915
   },
   {
     "name": "Shirly's Milktea",
@@ -4173,7 +4173,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1911
+    "id": 1931
   },
   {
     "name": "Sky Cafe",
@@ -4191,7 +4191,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1914
+    "id": 1934
   },
   {
     "name": "Smthn Smthn",
@@ -4209,7 +4209,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1915
+    "id": 1935
   },
   {
     "name": "Sugar n' Spice",
@@ -4227,7 +4227,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1925
+    "id": 1945
   },
   {
     "name": "Sugbo Macchiato",
@@ -4245,7 +4245,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1926
+    "id": 1946
   },
   {
     "name": "Sugbo Macchiato",
@@ -4263,7 +4263,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1927
+    "id": 1947
   },
   {
     "name": "The Bunkhouse",
@@ -4281,7 +4281,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1937
+    "id": 1957
   },
   {
     "name": "The Burp Co.",
@@ -4299,7 +4299,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1938
+    "id": 1958
   },
   {
     "name": "Vita Bella",
@@ -4317,7 +4317,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1958
+    "id": 1978
   },
   {
     "name": "Yogu",
@@ -4335,7 +4335,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1960
+    "id": 1980
   },
   {
     "name": "Yoyo Kapehan",
@@ -4353,7 +4353,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1961
+    "id": 1981
   },
   {
     "name": "Zorbox Café",
@@ -4371,7 +4371,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1962
+    "id": 1982
   },
   {
     "name": "Alegre Cafe & Roastery",
@@ -4389,7 +4389,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1970
+    "id": 1990
   },
   {
     "name": "Analogue",
@@ -4407,7 +4407,7 @@
     "outdoor_seating": "yes",
     "parking": null,
     "wheelchair": null,
-    "id": 1972
+    "id": 1993
   },
   {
     "name": "Asa Ta Brew",
@@ -4425,7 +4425,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1975
+    "id": 1996
   },
   {
     "name": "Bae Bistro",
@@ -4443,7 +4443,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1979
+    "id": 2000
   },
   {
     "name": "Bloomiggin Bubble Tea & Coffee",
@@ -4461,7 +4461,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 1993
+    "id": 2014
   },
   {
     "name": "Cafe Venereja",
@@ -4479,7 +4479,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2003
+    "id": 2024
   },
   {
     "name": "Café Agripino",
@@ -4497,7 +4497,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2008
+    "id": 2029
   },
   {
     "name": "Café Sierra",
@@ -4515,7 +4515,7 @@
     "outdoor_seating": "yes",
     "parking": null,
     "wheelchair": null,
-    "id": 2014
+    "id": 2035
   },
   {
     "name": "Cerlitos",
@@ -4533,7 +4533,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2023
+    "id": 2044
   },
   {
     "name": "Coffe, Please",
@@ -4551,7 +4551,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2030
+    "id": 2051
   },
   {
     "name": "Coffee By The Way",
@@ -4569,7 +4569,7 @@
     "outdoor_seating": "yes",
     "parking": null,
     "wheelchair": null,
-    "id": 2033
+    "id": 2054
   },
   {
     "name": "Coffee Dream",
@@ -4587,7 +4587,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2037
+    "id": 2058
   },
   {
     "name": "Coffee Dream",
@@ -4605,7 +4605,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2038
+    "id": 2059
   },
   {
     "name": "Cuppa Cafe",
@@ -4623,7 +4623,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2044
+    "id": 2065
   },
   {
     "name": "Cuptions Coffee & Resto",
@@ -4641,7 +4641,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2046
+    "id": 2067
   },
   {
     "name": "D' Cups Cafe",
@@ -4659,7 +4659,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2047
+    "id": 2068
   },
   {
     "name": "D'Baekery",
@@ -4677,7 +4677,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2048
+    "id": 2069
   },
   {
     "name": "Daleachious Café",
@@ -4695,7 +4695,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2049
+    "id": 2070
   },
   {
     "name": "Den's Coffee",
@@ -4713,7 +4713,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2052
+    "id": 2073
   },
   {
     "name": "Fisher’s Cafe",
@@ -4731,7 +4731,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2065
+    "id": 2086
   },
   {
     "name": "Hello Kape",
@@ -4749,7 +4749,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2074
+    "id": 2095
   },
   {
     "name": "HQ",
@@ -4767,7 +4767,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2076
+    "id": 2097
   },
   {
     "name": "Hygge Coffee",
@@ -4785,7 +4785,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2077
+    "id": 2098
   },
   {
     "name": "Jinyu Taiwan Tea",
@@ -4803,7 +4803,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2080
+    "id": 2102
   },
   {
     "name": "Kiks",
@@ -4821,7 +4821,7 @@
     "outdoor_seating": "yes",
     "parking": null,
     "wheelchair": null,
-    "id": 2092
+    "id": 2115
   },
   {
     "name": "Koo Zee Coffee",
@@ -4839,7 +4839,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2094
+    "id": 2117
   },
   {
     "name": "Lifestyle Cafe",
@@ -4857,7 +4857,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2102
+    "id": 2125
   },
   {
     "name": "Mug Caffeta",
@@ -4875,7 +4875,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2125
+    "id": 2148
   },
   {
     "name": "prin tah printing services",
@@ -4893,7 +4893,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2140
+    "id": 2163
   },
   {
     "name": "Psalms",
@@ -4911,7 +4911,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2141
+    "id": 2164
   },
   {
     "name": "Psalms Coffee & Pastry",
@@ -4929,7 +4929,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2142
+    "id": 2165
   },
   {
     "name": "Roadside",
@@ -4947,7 +4947,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2153
+    "id": 2176
   },
   {
     "name": "Serenitea",
@@ -4965,7 +4965,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2185
+    "id": 2208
   },
   {
     "name": "Talan-Awon",
@@ -4983,7 +4983,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2195
+    "id": 2218
   },
   {
     "name": "Tati Cafe",
@@ -5001,7 +5001,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2196
+    "id": 2219
   },
   {
     "name": "WKND 1970",
@@ -5019,7 +5019,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2218
+    "id": 2242
   },
   {
     "name": "Baba Café",
@@ -5037,7 +5037,7 @@
     "outdoor_seating": "yes",
     "parking": null,
     "wheelchair": null,
-    "id": 2236
+    "id": 2260
   },
   {
     "name": "Belviz Durian Farm",
@@ -5055,7 +5055,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2239
+    "id": 2263
   },
   {
     "name": "Cafe Amoree",
@@ -5073,7 +5073,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2259
+    "id": 2283
   },
   {
     "name": "Cafe Amoree",
@@ -5091,7 +5091,7 @@
     "outdoor_seating": "yes",
     "parking": null,
     "wheelchair": null,
-    "id": 2260
+    "id": 2284
   },
   {
     "name": "Cafe Amoree",
@@ -5109,7 +5109,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2261
+    "id": 2285
   },
   {
     "name": "Café Dahican",
@@ -5127,7 +5127,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2275
+    "id": 2299
   },
   {
     "name": "Chachago",
@@ -5145,7 +5145,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2287
+    "id": 2311
   },
   {
     "name": "Chachago",
@@ -5163,7 +5163,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2288
+    "id": 2312
   },
   {
     "name": "Cliff's Coffee Corner",
@@ -5181,7 +5181,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2291
+    "id": 2315
   },
   {
     "name": "Degrees Cafe",
@@ -5199,7 +5199,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2301
+    "id": 2325
   },
   {
     "name": "Digital Scape",
@@ -5217,7 +5217,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2302
+    "id": 2326
   },
   {
     "name": "Felicity Snacks",
@@ -5235,7 +5235,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2308
+    "id": 2332
   },
   {
     "name": "Fika Stugan",
@@ -5253,7 +5253,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2312
+    "id": 2336
   },
   {
     "name": "Haron's Cafe",
@@ -5271,7 +5271,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2323
+    "id": 2347
   },
   {
     "name": "Heavenly MC Cafe & Resto",
@@ -5289,7 +5289,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2324
+    "id": 2348
   },
   {
     "name": "Hilaiza's",
@@ -5307,7 +5307,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2327
+    "id": 2351
   },
   {
     "name": "Ice & Tea",
@@ -5325,7 +5325,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2334
+    "id": 2358
   },
   {
     "name": "Jay Kees",
@@ -5343,7 +5343,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2338
+    "id": 2362
   },
   {
     "name": "Jenelyn Palanca Kapihan",
@@ -5361,7 +5361,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2339
+    "id": 2363
   },
   {
     "name": "Jo Bo",
@@ -5379,7 +5379,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2341
+    "id": 2365
   },
   {
     "name": "Leaf Cup",
@@ -5397,7 +5397,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2364
+    "id": 2388
   },
   {
     "name": "Mangape Ta!",
@@ -5415,7 +5415,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2376
+    "id": 2401
   },
   {
     "name": "Ngapeta",
@@ -5433,7 +5433,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2411
+    "id": 2436
   },
   {
     "name": "Outlook Coffee",
@@ -5451,7 +5451,7 @@
     "outdoor_seating": "yes",
     "parking": null,
     "wheelchair": null,
-    "id": 2416
+    "id": 2441
   },
   {
     "name": "Perkspresso Cafe",
@@ -5469,7 +5469,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2420
+    "id": 2445
   },
   {
     "name": "Pickup Coffee",
@@ -5487,7 +5487,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2479
+    "id": 2504
   },
   {
     "name": "Pickup Coffee",
@@ -5505,7 +5505,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2480
+    "id": 2505
   },
   {
     "name": "Pickup Coffee",
@@ -5523,7 +5523,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2481
+    "id": 2506
   },
   {
     "name": "Pickup Coffee",
@@ -5541,7 +5541,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2482
+    "id": 2507
   },
   {
     "name": "Pickup Coffee",
@@ -5559,7 +5559,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2483
+    "id": 2508
   },
   {
     "name": "Roadway Cafe",
@@ -5577,7 +5577,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2486
+    "id": 2511
   },
   {
     "name": "Seattle's Dream Cafe",
@@ -5595,7 +5595,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2491
+    "id": 2516
   },
   {
     "name": "Starbucks - GenSan Highway",
@@ -5613,7 +5613,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2499
+    "id": 2524
   },
   {
     "name": "T'Brews Café",
@@ -5631,7 +5631,7 @@
     "outdoor_seating": "yes",
     "parking": null,
     "wheelchair": "yes",
-    "id": 2502
+    "id": 2527
   },
   {
     "name": "Tazzaa Cafe",
@@ -5649,7 +5649,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2506
+    "id": 2531
   },
   {
     "name": "Teacup Time",
@@ -5667,7 +5667,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2510
+    "id": 2535
   },
   {
     "name": "Teacup Time",
@@ -5685,7 +5685,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2511
+    "id": 2536
   },
   {
     "name": "Tree House Garden Cafe",
@@ -5703,7 +5703,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2522
+    "id": 2548
   },
   {
     "name": "Villa Pedz",
@@ -5721,7 +5721,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2529
+    "id": 2555
   },
   {
     "name": "Andapon Peak",
@@ -5739,7 +5739,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2552
+    "id": 2578
   },
   {
     "name": "Aye's KapeTearia",
@@ -5757,7 +5757,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2567
+    "id": 2593
   },
   {
     "name": "Beans & Bricks Cafe",
@@ -5775,7 +5775,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2572
+    "id": 2599
   },
   {
     "name": "BluGre",
@@ -5793,7 +5793,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2587
+    "id": 2615
   },
   {
     "name": "Boni Coffee Lounge and Sports Bar",
@@ -5811,7 +5811,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2588
+    "id": 2616
   },
   {
     "name": "Cafebistro",
@@ -5829,7 +5829,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2606
+    "id": 2634
   },
   {
     "name": "Coffee Bean & Tea Leaf",
@@ -5847,7 +5847,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2616
+    "id": 2644
   },
   {
     "name": "Coffee Maybe",
@@ -5865,7 +5865,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2619
+    "id": 2647
   },
   {
     "name": "Coffee Maybe",
@@ -5883,7 +5883,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2620
+    "id": 2648
   },
   {
     "name": "Coffee.Smile",
@@ -5901,7 +5901,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2621
+    "id": 2649
   },
   {
     "name": "Craft Coffee",
@@ -5919,7 +5919,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2628
+    "id": 2656
   },
   {
     "name": "Daleachious Cafe",
@@ -5937,7 +5937,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2634
+    "id": 2662
   },
   {
     "name": "Dungaw Bistro",
@@ -5955,7 +5955,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2637
+    "id": 2665
   },
   {
     "name": "EffoC Specialty",
@@ -5973,7 +5973,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2641
+    "id": 2668
   },
   {
     "name": "Hapag Kainan",
@@ -5991,7 +5991,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2660
+    "id": 2687
   },
   {
     "name": "Heaven's Coffee and Tea",
@@ -6009,7 +6009,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2662
+    "id": 2689
   },
   {
     "name": "Home Brew",
@@ -6027,7 +6027,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2664
+    "id": 2691
   },
   {
     "name": "J.CO Donuts & Coffee",
@@ -6045,7 +6045,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": "yes",
-    "id": 2679
+    "id": 2705
   },
   {
     "name": "Kate's Overview Cafe",
@@ -6063,7 +6063,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2692
+    "id": 2718
   },
   {
     "name": "Koopi Princess",
@@ -6081,7 +6081,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2701
+    "id": 2727
   },
   {
     "name": "Kopi lah Roti",
@@ -6099,7 +6099,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2702
+    "id": 2728
   },
   {
     "name": "Kopikuys",
@@ -6117,7 +6117,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2703
+    "id": 2729
   },
   {
     "name": "Kopikuys",
@@ -6135,7 +6135,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2704
+    "id": 2730
   },
   {
     "name": "Lorie's Cafe",
@@ -6153,7 +6153,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2708
+    "id": 2734
   },
   {
     "name": "Paramount Coffee",
@@ -6171,7 +6171,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2729
+    "id": 2753
   },
   {
     "name": "Paramount Coffee",
@@ -6189,7 +6189,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": "yes",
-    "id": 2730
+    "id": 2754
   },
   {
     "name": "Paramount Coffee",
@@ -6207,7 +6207,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2731
+    "id": 2755
   },
   {
     "name": "Pugstreet Cafe",
@@ -6225,7 +6225,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2741
+    "id": 2765
   },
   {
     "name": "Purge Coffee Roaster",
@@ -6243,7 +6243,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2742
+    "id": 2766
   },
   {
     "name": "SAMALamig",
@@ -6261,7 +6261,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2751
+    "id": 2776
   },
   {
     "name": "Sikwatihan Sa Musuan",
@@ -6279,7 +6279,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2756
+    "id": 2781
   },
   {
     "name": "Solomon's Brew Cafe",
@@ -6297,7 +6297,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2758
+    "id": 2783
   },
   {
     "name": "Sonnenberg",
@@ -6315,7 +6315,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2759
+    "id": 2784
   },
   {
     "name": "Southside Coffee",
@@ -6333,7 +6333,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2760
+    "id": 2785
   },
   {
     "name": "17th Avenue",
@@ -6351,7 +6351,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2817
+    "id": 2842
   },
   {
     "name": "Alzada",
@@ -6369,7 +6369,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2818
+    "id": 2843
   },
   {
     "name": "Beaus Cafe",
@@ -6387,7 +6387,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2831
+    "id": 2856
   },
   {
     "name": "Blue Magic",
@@ -6405,7 +6405,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2837
+    "id": 2862
   },
   {
     "name": "Brewed Ways Coffee",
@@ -6423,7 +6423,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2845
+    "id": 2870
   },
   {
     "name": "Cafe Firenzo",
@@ -6441,7 +6441,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2855
+    "id": 2880
   },
   {
     "name": "Cafe Leonida",
@@ -6459,7 +6459,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2858
+    "id": 2883
   },
   {
     "name": "Caff & Colds",
@@ -6477,7 +6477,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2861
+    "id": 2886
   },
   {
     "name": "Coffee Bar",
@@ -6495,7 +6495,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2871
+    "id": 2896
   },
   {
     "name": "Confex & Co. Bakehouse",
@@ -6513,7 +6513,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2882
+    "id": 2907
   },
   {
     "name": "Hokkaido Milk Tea",
@@ -6531,7 +6531,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2912
+    "id": 2938
   },
   {
     "name": "Hola Coffee",
@@ -6549,7 +6549,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2913
+    "id": 2939
   },
   {
     "name": "Kapeng Bahay",
@@ -6567,7 +6567,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2926
+    "id": 2953
   },
   {
     "name": "Laboratoire Cafe",
@@ -6585,7 +6585,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2936
+    "id": 2963
   },
   {
     "name": "Lara Mia",
@@ -6603,7 +6603,7 @@
     "outdoor_seating": "yes",
     "parking": null,
     "wheelchair": "yes",
-    "id": 2938
+    "id": 2965
   },
   {
     "name": "Le Cafe",
@@ -6621,7 +6621,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2940
+    "id": 2967
   },
   {
     "name": "Mandarin Tea Garden",
@@ -6639,7 +6639,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2945
+    "id": 2972
   },
   {
     "name": "Manna x Quail Cafe",
@@ -6657,7 +6657,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2947
+    "id": 2974
   },
   {
     "name": "Mine Cafe",
@@ -6675,7 +6675,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2955
+    "id": 2982
   },
   {
     "name": "Monsoon Cafe",
@@ -6693,7 +6693,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2956
+    "id": 2983
   },
   {
     "name": "Mother Lou Cafe",
@@ -6711,7 +6711,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2957
+    "id": 2984
   },
   {
     "name": "StarBlack Cafe",
@@ -6729,7 +6729,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2992
+    "id": 3019
   },
   {
     "name": "Steep Coffee",
@@ -6747,7 +6747,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2994
+    "id": 3021
   },
   {
     "name": "Strict Picks",
@@ -6765,7 +6765,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 2996
+    "id": 3023
   },
   {
     "name": "Tea Cup Time",
@@ -6783,7 +6783,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 3001
+    "id": 3028
   },
   {
     "name": "Tipsy Brews",
@@ -6801,7 +6801,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 3014
+    "id": 3041
   },
   {
     "name": "Tsokolate Ni Eyay",
@@ -6819,7 +6819,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 3017
+    "id": 3044
   },
   {
     "name": "Vanitea Cafe",
@@ -6837,7 +6837,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 3022
+    "id": 3049
   },
   {
     "name": "We Got Cha! Bistro",
@@ -6855,7 +6855,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 3025
+    "id": 3052
   },
   {
     "name": "Wild Shakes",
@@ -6873,7 +6873,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 3026
+    "id": 3053
   },
   {
     "name": "Wild Shakes",
@@ -6891,7 +6891,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 3027
+    "id": 3054
   },
   {
     "name": "23:5 Cafe",
@@ -6909,7 +6909,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 3034
+    "id": 3062
   },
   {
     "name": "Avitha's",
@@ -6927,7 +6927,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 3043
+    "id": 3071
   },
   {
     "name": "Bean Xpress",
@@ -6945,7 +6945,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 3050
+    "id": 3078
   },
   {
     "name": "Bercilla's Internet Cafe",
@@ -6963,7 +6963,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 3054
+    "id": 3082
   },
   {
     "name": "Bistro Teanimbo",
@@ -6981,7 +6981,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 3055
+    "id": 3083
   },
   {
     "name": "Bleu Cafe",
@@ -6999,7 +6999,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 3057
+    "id": 3085
   },
   {
     "name": "BooTealicious Milktea",
@@ -7017,7 +7017,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 3058
+    "id": 3086
   },
   {
     "name": "Brew Lane Cafe",
@@ -7035,7 +7035,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 3061
+    "id": 3089
   },
   {
     "name": "Bubble Black Milk Tea",
@@ -7053,7 +7053,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 3064
+    "id": 3092
   },
   {
     "name": "Cafe Devow",
@@ -7071,7 +7071,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 3073
+    "id": 3101
   },
   {
     "name": "Café Prelaya",
@@ -7089,7 +7089,7 @@
     "outdoor_seating": "yes",
     "parking": null,
     "wheelchair": null,
-    "id": 3089
+    "id": 3117
   },
   {
     "name": "Cely's Cafe",
@@ -7107,7 +7107,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 3098
+    "id": 3126
   },
   {
     "name": "Cely's Cafe",
@@ -7125,7 +7125,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 3099
+    "id": 3127
   },
   {
     "name": "Cely's Cafe",
@@ -7143,7 +7143,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 3100
+    "id": 3128
   },
   {
     "name": "Cely's Cafe",
@@ -7161,7 +7161,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 3101
+    "id": 3129
   },
   {
     "name": "Cely's Cafe",
@@ -7179,7 +7179,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 3102
+    "id": 3130
   },
   {
     "name": "Coffee Bean Brewed",
@@ -7197,7 +7197,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 3104
+    "id": 3132
   },
   {
     "name": "Coffee for Peace",
@@ -7215,7 +7215,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 3106
+    "id": 3134
   },
   {
     "name": "Daily Routine's Cafe",
@@ -7233,7 +7233,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 3117
+    "id": 3145
   },
   {
     "name": "Dayspring Cafe",
@@ -7251,7 +7251,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 3118
+    "id": 3146
   },
   {
     "name": "Forest Brews Code",
@@ -7269,7 +7269,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 3131
+    "id": 3159
   },
   {
     "name": "Fourth Street Cafe",
@@ -7287,7 +7287,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 3132
+    "id": 3160
   },
   {
     "name": "geePods Homestay & Cafe",
@@ -7305,7 +7305,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 3135
+    "id": 3163
   },
   {
     "name": "Glasshouse Coffee",
@@ -7323,7 +7323,7 @@
     "outdoor_seating": "yes",
     "parking": null,
     "wheelchair": null,
-    "id": 3137
+    "id": 3165
   },
   {
     "name": "Have a Hab",
@@ -7341,7 +7341,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 3141
+    "id": 3169
   },
   {
     "name": "Kaffa Buna",
@@ -7359,7 +7359,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 3152
+    "id": 3181
   },
   {
     "name": "Kamp Perpekto",
@@ -7377,7 +7377,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 3155
+    "id": 3184
   },
   {
     "name": "Kapeweñoz",
@@ -7395,7 +7395,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 3156
+    "id": 3185
   },
   {
     "name": "Kapeweñoz",
@@ -7413,7 +7413,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 3157
+    "id": 3186
   },
   {
     "name": "Lil' Ben Coffee House",
@@ -7431,7 +7431,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 3167
+    "id": 3196
   },
   {
     "name": "Matcha Bar",
@@ -7449,7 +7449,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 3182
+    "id": 3211
   },
   {
     "name": "Tiger Bubble Tea",
@@ -7467,7 +7467,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 3239
+    "id": 3269
   },
   {
     "name": "Tipsy Coffee - 8 flavors Macchiato",
@@ -7485,7 +7485,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 3241
+    "id": 3271
   },
   {
     "name": "Tree House",
@@ -7503,7 +7503,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 3247
+    "id": 3277
   },
   {
     "name": "Blugre Cafe",
@@ -7521,7 +7521,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 3303
+    "id": 3333
   },
   {
     "name": "Cafe Audemars",
@@ -7539,7 +7539,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 3312
+    "id": 3342
   },
   {
     "name": "Cafe Pantalan",
@@ -7557,7 +7557,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 3317
+    "id": 3347
   },
   {
     "name": "Cafe Verde",
@@ -7575,7 +7575,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 3320
+    "id": 3350
   },
   {
     "name": "Captain Freewilly Cafe",
@@ -7593,7 +7593,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 3328
+    "id": 3358
   },
   {
     "name": "ClaireBites Cafe",
@@ -7611,7 +7611,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 3333
+    "id": 3363
   },
   {
     "name": "CMU Fulbright Coffee",
@@ -7629,7 +7629,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 3334
+    "id": 3364
   },
   {
     "name": "Dreamers Coffee 37",
@@ -7647,7 +7647,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 3355
+    "id": 3385
   },
   {
     "name": "EatCafe De Boerderij",
@@ -7665,7 +7665,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 3360
+    "id": 3390
   },
   {
     "name": "Habitat Coffee",
@@ -7683,7 +7683,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 3376
+    "id": 3406
   },
   {
     "name": "Hokkaido Milktea",
@@ -7701,7 +7701,7 @@
     "outdoor_seating": "yes",
     "parking": null,
     "wheelchair": null,
-    "id": 3384
+    "id": 3414
   },
   {
     "name": "Hokkaido Milktea",
@@ -7719,7 +7719,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 3385
+    "id": 3415
   },
   {
     "name": "Icetag Cafe",
@@ -7737,7 +7737,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 3387
+    "id": 3417
   },
   {
     "name": "Jay's Coffee",
@@ -7755,7 +7755,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 3391
+    "id": 3421
   },
   {
     "name": "Kafé Kalinaw",
@@ -7773,7 +7773,7 @@
     "outdoor_seating": "yes",
     "parking": null,
     "wheelchair": null,
-    "id": 3394
+    "id": 3424
   },
   {
     "name": "Kofi Boss",
@@ -7791,7 +7791,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 3400
+    "id": 3430
   },
   {
     "name": "Kopi 82",
@@ -7809,7 +7809,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 3403
+    "id": 3433
   },
   {
     "name": "Nikko's Brew",
@@ -7827,7 +7827,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 3423
+    "id": 3453
   },
   {
     "name": "Panadero Expresso",
@@ -7845,7 +7845,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 3429
+    "id": 3459
   },
   {
     "name": "Pick-up Coffee",
@@ -7863,7 +7863,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 3434
+    "id": 3464
   },
   {
     "name": "Pick-up Coffee",
@@ -7881,7 +7881,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 3435
+    "id": 3465
   },
   {
     "name": "Preskonan Cafe",
@@ -7899,7 +7899,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 3438
+    "id": 3468
   },
   {
     "name": "Pungtod Cafe",
@@ -7917,7 +7917,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 3440
+    "id": 3470
   },
   {
     "name": "Regi's View Cafe",
@@ -7935,7 +7935,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 3443
+    "id": 3473
   },
   {
     "name": "Roadway",
@@ -7953,7 +7953,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 3446
+    "id": 3476
   },
   {
     "name": "Sagul Cafe",
@@ -7971,7 +7971,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 3450
+    "id": 3480
   },
   {
     "name": "Seattle's Best Coffee",
@@ -7989,7 +7989,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 3490
+    "id": 3520
   },
   {
     "name": "Shanksbucks Cafe",
@@ -8007,7 +8007,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 3494
+    "id": 3524
   },
   {
     "name": "Starbucks",
@@ -8025,7 +8025,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 3868
+    "id": 3898
   },
   {
     "name": "Starbucks",
@@ -8043,7 +8043,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 3869
+    "id": 3899
   },
   {
     "name": "Starbucks",
@@ -8061,7 +8061,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 3870
+    "id": 3900
   },
   {
     "name": "Starbucks",
@@ -8079,7 +8079,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 3871
+    "id": 3901
   },
   {
     "name": "Starbucks",
@@ -8097,7 +8097,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 3872
+    "id": 3902
   },
   {
     "name": "Starbucks",
@@ -8115,7 +8115,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 3873
+    "id": 3903
   },
   {
     "name": "Starbucks",
@@ -8133,7 +8133,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 3874
+    "id": 3904
   },
   {
     "name": "The Bangerz Bistro",
@@ -8151,7 +8151,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 3896
+    "id": 3926
   },
   {
     "name": "WeekendMatcha",
@@ -8169,7 +8169,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 3911
+    "id": 3941
   },
   {
     "name": "495 Resto Cafe",
@@ -8187,7 +8187,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 3918
+    "id": 3948
   },
   {
     "name": "Aisha Kapehan",
@@ -8205,7 +8205,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 3923
+    "id": 3953
   },
   {
     "name": "Bestie",
@@ -8223,7 +8223,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 3937
+    "id": 3968
   },
   {
     "name": "Blugre Coffee",
@@ -8241,7 +8241,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 3941
+    "id": 3972
   },
   {
     "name": "Brewpub",
@@ -8259,7 +8259,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 3946
+    "id": 3978
   },
   {
     "name": "Brunch Mobile Cafe",
@@ -8277,7 +8277,7 @@
     "outdoor_seating": "yes",
     "parking": null,
     "wheelchair": null,
-    "id": 3948
+    "id": 3980
   },
   {
     "name": "Bubble Tribe",
@@ -8295,7 +8295,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 3949
+    "id": 3981
   },
   {
     "name": "Buckstab Coffee",
@@ -8313,7 +8313,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 3950
+    "id": 3982
   },
   {
     "name": "Cafe Rysus",
@@ -8331,7 +8331,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 3957
+    "id": 3989
   },
   {
     "name": "Cafelino",
@@ -8349,7 +8349,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 3962
+    "id": 3994
   },
   {
     "name": "Daily Dose",
@@ -8367,7 +8367,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 3983
+    "id": 4015
   },
   {
     "name": "Fat Bean Cafe",
@@ -8385,7 +8385,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4006
+    "id": 4038
   },
   {
     "name": "Garden Cafe",
@@ -8403,7 +8403,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4012
+    "id": 4044
   },
   {
     "name": "Hi-Way Cafe",
@@ -8421,7 +8421,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4022
+    "id": 4054
   },
   {
     "name": "Jessa Mae Lascuna Kapihan",
@@ -8439,7 +8439,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4035
+    "id": 4067
   },
   {
     "name": "Junn Tea",
@@ -8457,7 +8457,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4038
+    "id": 4070
   },
   {
     "name": "Kanto Coffee",
@@ -8475,7 +8475,7 @@
     "outdoor_seating": "yes",
     "parking": null,
     "wheelchair": null,
-    "id": 4040
+    "id": 4072
   },
   {
     "name": "Kapehan Ni Roger",
@@ -8493,7 +8493,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4048
+    "id": 4080
   },
   {
     "name": "Kapenato",
@@ -8511,7 +8511,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4049
+    "id": 4081
   },
   {
     "name": "Keepsakes Cafe",
@@ -8529,7 +8529,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4052
+    "id": 4084
   },
   {
     "name": "Keepsakes Cafe",
@@ -8547,7 +8547,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4053
+    "id": 4085
   },
   {
     "name": "Keepsakes Cafe",
@@ -8565,7 +8565,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4054
+    "id": 4086
   },
   {
     "name": "Kofi Gram",
@@ -8583,7 +8583,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4060
+    "id": 4092
   },
   {
     "name": "LJN Kapihan",
@@ -8601,7 +8601,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4069
+    "id": 4102
   },
   {
     "name": "M310 Ca Phi",
@@ -8619,7 +8619,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4072
+    "id": 4105
   },
   {
     "name": "Miko's Brew",
@@ -8637,7 +8637,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4081
+    "id": 4115
   },
   {
     "name": "MJ's Crepe 23",
@@ -8655,7 +8655,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4086
+    "id": 4120
   },
   {
     "name": "Plan B",
@@ -8673,7 +8673,7 @@
     "outdoor_seating": null,
     "parking": "yes",
     "wheelchair": null,
-    "id": 4100
+    "id": 4134
   },
   {
     "name": "Qa-Tsaa-Da Milktea and Snacks",
@@ -8691,7 +8691,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4104
+    "id": 4138
   },
   {
     "name": "SorrideTea",
@@ -8709,7 +8709,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4113
+    "id": 4147
   },
   {
     "name": "Starwoods Garden Cafe",
@@ -8727,7 +8727,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4120
+    "id": 4154
   },
   {
     "name": "The Coffee Spot and Lounge",
@@ -8745,7 +8745,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4133
+    "id": 4167
   },
   {
     "name": "Tomo Kopi",
@@ -8763,7 +8763,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4140
+    "id": 4174
   },
   {
     "name": "Turkish Coffee House",
@@ -8781,7 +8781,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4143
+    "id": 4177
   },
   {
     "name": "Big Bean Cafe",
@@ -8799,7 +8799,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4172
+    "id": 4208
   },
   {
     "name": "Bo's Coffee",
@@ -8817,7 +8817,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4228
+    "id": 4253
   },
   {
     "name": "Bo's Coffee",
@@ -8835,7 +8835,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4229
+    "id": 4254
   },
   {
     "name": "Bo's Coffee",
@@ -8853,7 +8853,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": "yes",
-    "id": 4230
+    "id": 4255
   },
   {
     "name": "Cafe Fragrance",
@@ -8871,7 +8871,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4245
+    "id": 4270
   },
   {
     "name": "Cafe Rodrigo",
@@ -8889,7 +8889,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4248
+    "id": 4273
   },
   {
     "name": "Cafe Severina",
@@ -8907,7 +8907,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4250
+    "id": 4275
   },
   {
     "name": "Café Macario",
@@ -8925,7 +8925,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4256
+    "id": 4281
   },
   {
     "name": "Cornerhub",
@@ -8943,7 +8943,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4274
+    "id": 4299
   },
   {
     "name": "Daleachious cafe",
@@ -8961,7 +8961,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4280
+    "id": 4305
   },
   {
     "name": "Don Macchiatos",
@@ -8979,7 +8979,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4302
+    "id": 4327
   },
   {
     "name": "Don Macchiatos",
@@ -8997,7 +8997,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4303
+    "id": 4328
   },
   {
     "name": "Don Macchiatos",
@@ -9015,7 +9015,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4304
+    "id": 4329
   },
   {
     "name": "Don Macchiatos",
@@ -9033,7 +9033,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4305
+    "id": 4330
   },
   {
     "name": "Don Macchiatos",
@@ -9051,7 +9051,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4306
+    "id": 4331
   },
   {
     "name": "Figaro Coffee",
@@ -9069,7 +9069,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4319
+    "id": 4344
   },
   {
     "name": "Fika Cafe",
@@ -9087,7 +9087,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4320
+    "id": 4345
   },
   {
     "name": "Holon House of Coffee",
@@ -9105,7 +9105,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4331
+    "id": 4356
   },
   {
     "name": "Huevos Diner",
@@ -9123,7 +9123,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4332
+    "id": 4357
   },
   {
     "name": "Humble Coffee PH",
@@ -9141,7 +9141,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4333
+    "id": 4358
   },
   {
     "name": "Irene Kapehan",
@@ -9159,7 +9159,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4336
+    "id": 4361
   },
   {
     "name": "Janeth's Cafe & Resto",
@@ -9177,7 +9177,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4342
+    "id": 4367
   },
   {
     "name": "Johnny Cupcakes",
@@ -9195,7 +9195,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4344
+    "id": 4369
   },
   {
     "name": "Jonalyn Yata Kapihan",
@@ -9213,7 +9213,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4345
+    "id": 4370
   },
   {
     "name": "Kanoffee",
@@ -9231,7 +9231,7 @@
     "outdoor_seating": "yes",
     "parking": null,
     "wheelchair": null,
-    "id": 4351
+    "id": 4376
   },
   {
     "name": "Kape Maramag",
@@ -9249,7 +9249,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4355
+    "id": 4380
   },
   {
     "name": "Kingdom Cafe",
@@ -9267,7 +9267,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4358
+    "id": 4383
   },
   {
     "name": "Kopi Ka",
@@ -9285,7 +9285,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4360
+    "id": 4385
   },
   {
     "name": "Mac Greggor Coffee House",
@@ -9303,7 +9303,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4374
+    "id": 4399
   },
   {
     "name": "Matwels Coffee Station",
@@ -9321,7 +9321,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4379
+    "id": 4404
   },
   {
     "name": "Mylk",
@@ -9339,7 +9339,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4392
+    "id": 4416
   },
   {
     "name": "Resto Rock & Cafe",
@@ -9357,7 +9357,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4407
+    "id": 4431
   },
   {
     "name": "RND Display Center",
@@ -9375,7 +9375,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4408
+    "id": 4432
   },
   {
     "name": "Sukol Royal Tea",
@@ -9393,7 +9393,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4430
+    "id": 4452
   },
   {
     "name": "The Coffee Bean & Tea Leaf",
@@ -9411,7 +9411,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4523
+    "id": 4538
   },
   {
     "name": "The French Baker",
@@ -9429,7 +9429,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4534
+    "id": 4548
   },
   {
     "name": "The Frequency Cafe",
@@ -9447,7 +9447,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4535
+    "id": 4549
   },
   {
     "name": "1517",
@@ -9465,7 +9465,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4552
+    "id": 4567
   },
   {
     "name": "911 Street Café",
@@ -9483,7 +9483,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4558
+    "id": 4573
   },
   {
     "name": "Annipie Bakery Cafe",
@@ -9501,7 +9501,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4562
+    "id": 4577
   },
   {
     "name": "C5",
@@ -9519,7 +9519,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4585
+    "id": 4611
   },
   {
     "name": "Café Fazenda",
@@ -9537,7 +9537,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4600
+    "id": 4626
   },
   {
     "name": "Cheat Time Bakehouse",
@@ -9555,7 +9555,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4603
+    "id": 4629
   },
   {
     "name": "Cheat Time Bakehouse",
@@ -9573,7 +9573,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4604
+    "id": 4630
   },
   {
     "name": "Cheat Time Bakehouse",
@@ -9591,7 +9591,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4605
+    "id": 4631
   },
   {
     "name": "Cliffhanger Café",
@@ -9609,7 +9609,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4606
+    "id": 4632
   },
   {
     "name": "Coffee Spot",
@@ -9627,7 +9627,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4620
+    "id": 4646
   },
   {
     "name": "Dan Cafe",
@@ -9645,7 +9645,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4627
+    "id": 4653
   },
   {
     "name": "Euro Baker",
@@ -9663,7 +9663,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4635
+    "id": 4661
   },
   {
     "name": "FRamily Milk Tea",
@@ -9681,7 +9681,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4644
+    "id": 4670
   },
   {
     "name": "Gretch Kape haus",
@@ -9699,7 +9699,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4652
+    "id": 4678
   },
   {
     "name": "Hello Kape atbp",
@@ -9717,7 +9717,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4661
+    "id": 4687
   },
   {
     "name": "Janeen's",
@@ -9735,7 +9735,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4676
+    "id": 4702
   },
   {
     "name": "Jo's Coffee By The Road",
@@ -9753,7 +9753,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4679
+    "id": 4705
   },
   {
     "name": "Kikimkaca",
@@ -9771,7 +9771,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4686
+    "id": 4712
   },
   {
     "name": "Kofea",
@@ -9789,7 +9789,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4688
+    "id": 4714
   },
   {
     "name": "Koop Cafe",
@@ -9807,7 +9807,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4690
+    "id": 4716
   },
   {
     "name": "Low Carb Coffee (Skin Metro)",
@@ -9825,7 +9825,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4696
+    "id": 4722
   },
   {
     "name": "Lucia's Specialties",
@@ -9843,7 +9843,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4697
+    "id": 4723
   },
   {
     "name": "Macao Imperial Tea",
@@ -9861,7 +9861,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4717
+    "id": 4743
   },
   {
     "name": "Orohoy",
@@ -9879,7 +9879,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4739
+    "id": 4766
   },
   {
     "name": "Port Cafe",
@@ -9897,7 +9897,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4746
+    "id": 4773
   },
   {
     "name": "Rosita's Unlimited Cafe",
@@ -9915,7 +9915,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4752
+    "id": 4779
   },
   {
     "name": "Selftea Cafe and Bar",
@@ -9933,7 +9933,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4754
+    "id": 4781
   },
   {
     "name": "Stash Coffee Co.",
@@ -9951,7 +9951,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4761
+    "id": 4788
   },
   {
     "name": "TasTea Bits",
@@ -9969,7 +9969,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4769
+    "id": 4796
   },
   {
     "name": "Tea Tropika",
@@ -9987,7 +9987,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4771
+    "id": 4798
   },
   {
     "name": "Unitea H and M Milktea Corner",
@@ -10005,7 +10005,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4786
+    "id": 4821
   },
   {
     "name": "Verde Pianta",
@@ -10023,7 +10023,7 @@
     "outdoor_seating": "yes",
     "parking": null,
     "wheelchair": "yes",
-    "id": 4789
+    "id": 4824
   },
   {
     "name": "Yat’s Kapehan",
@@ -10041,7 +10041,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4796
+    "id": 4831
   },
   {
     "name": "Aberilla Kapihan & Balotan",
@@ -10059,7 +10059,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4805
+    "id": 4840
   },
   {
     "name": "Apareja Buko Halo-Halo",
@@ -10077,7 +10077,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4810
+    "id": 4846
   },
   {
     "name": "Baristro",
@@ -10095,7 +10095,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4817
+    "id": 4853
   },
   {
     "name": "Benz Cafeteria",
@@ -10113,7 +10113,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4821
+    "id": 4857
   },
   {
     "name": "Big Brew",
@@ -10131,7 +10131,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4838
+    "id": 4874
   },
   {
     "name": "Big Brew",
@@ -10149,7 +10149,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4839
+    "id": 4875
   },
   {
     "name": "Bo’s coffee",
@@ -10167,7 +10167,7 @@
     "outdoor_seating": "yes",
     "parking": null,
     "wheelchair": null,
-    "id": 4844
+    "id": 4880
   },
   {
     "name": "Cactus Cafe",
@@ -10185,7 +10185,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4846
+    "id": 4882
   },
   {
     "name": "Cafe Vicente",
@@ -10203,7 +10203,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4861
+    "id": 4897
   },
   {
     "name": "Café Bernadette",
@@ -10221,7 +10221,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4863
+    "id": 4899
   },
   {
     "name": "Ciudad Fleur Cafe",
@@ -10239,7 +10239,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4869
+    "id": 4905
   },
   {
     "name": "Eight Cafe",
@@ -10257,7 +10257,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4891
+    "id": 4927
   },
   {
     "name": "Grind Coffee",
@@ -10275,7 +10275,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4910
+    "id": 4946
   },
   {
     "name": "Kagan Cafe",
@@ -10293,7 +10293,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4925
+    "id": 4961
   },
   {
     "name": "Kape Tilapips",
@@ -10311,7 +10311,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4928
+    "id": 4964
   },
   {
     "name": "Kopekol",
@@ -10329,7 +10329,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4936
+    "id": 4972
   },
   {
     "name": "Milk Shake Avenue",
@@ -10347,7 +10347,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4954
+    "id": 4990
   },
   {
     "name": "Primo Cafe & Grille",
@@ -10365,7 +10365,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4976
+    "id": 5012
   },
   {
     "name": "Tabi-Tabi Po",
@@ -10383,7 +10383,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 4994
+    "id": 5030
   },
   {
     "name": "Tiggo's",
@@ -10401,7 +10401,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 5001
+    "id": 5038
   },
   {
     "name": "Unfnshd Cafe",
@@ -10419,7 +10419,7 @@
     "outdoor_seating": "yes",
     "parking": null,
     "wheelchair": null,
-    "id": 5003
+    "id": 5040
   },
   {
     "name": "Blugré Coffee",
@@ -10437,7 +10437,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 5027
+    "id": 5064
   },
   {
     "name": "Blugré Coffee",
@@ -10455,7 +10455,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 5028
+    "id": 5065
   },
   {
     "name": "Brewtique Cafe",
@@ -10473,7 +10473,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 5029
+    "id": 5066
   },
   {
     "name": "Cafe Claveria",
@@ -10491,7 +10491,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 5038
+    "id": 5075
   },
   {
     "name": "Cafe Vania",
@@ -10509,7 +10509,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 5045
+    "id": 5082
   },
   {
     "name": "Chatime",
@@ -10527,7 +10527,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 5088
+    "id": 5125
   },
   {
     "name": "Coffeecat",
@@ -10545,7 +10545,7 @@
     "outdoor_seating": "yes",
     "parking": null,
     "wheelchair": null,
-    "id": 5097
+    "id": 5134
   },
   {
     "name": "Dose Coffee Lab",
@@ -10563,7 +10563,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 5112
+    "id": 5149
   },
   {
     "name": "FLTRD",
@@ -10581,7 +10581,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 5123
+    "id": 5160
   },
   {
     "name": "Green Coffee",
@@ -10599,7 +10599,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 5129
+    "id": 5166
   },
   {
     "name": "Green Coffee",
@@ -10617,7 +10617,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 5130
+    "id": 5167
   },
   {
     "name": "Green Coffee",
@@ -10635,7 +10635,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 5131
+    "id": 5168
   },
   {
     "name": "Green Coffee",
@@ -10653,7 +10653,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 5132
+    "id": 5169
   },
   {
     "name": "Green Coffee",
@@ -10671,7 +10671,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": "yes",
-    "id": 5133
+    "id": 5170
   },
   {
     "name": "Green Coffee",
@@ -10689,7 +10689,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 5134
+    "id": 5171
   },
   {
     "name": "Green Coffee",
@@ -10707,7 +10707,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 5135
+    "id": 5172
   },
   {
     "name": "Green Coffee",
@@ -10725,7 +10725,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 5136
+    "id": 5173
   },
   {
     "name": "Green Coffee",
@@ -10743,7 +10743,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 5137
+    "id": 5174
   },
   {
     "name": "Green Coffee",
@@ -10761,7 +10761,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 5138
+    "id": 5175
   },
   {
     "name": "Honestea",
@@ -10779,7 +10779,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 5150
+    "id": 5187
   },
   {
     "name": "Ice and Fries",
@@ -10797,7 +10797,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 5153
+    "id": 5190
   },
   {
     "name": "Koffiepause",
@@ -10815,7 +10815,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 5177
+    "id": 5214
   },
   {
     "name": "Manu",
@@ -10833,7 +10833,7 @@
     "outdoor_seating": "yes",
     "parking": null,
     "wheelchair": null,
-    "id": 5200
+    "id": 5237
   },
   {
     "name": "Maxyse Cafe",
@@ -10851,7 +10851,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 5201
+    "id": 5238
   },
   {
     "name": "Meeting Grounds",
@@ -10869,7 +10869,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 5204
+    "id": 5241
   },
   {
     "name": "Mohini's Cafe",
@@ -10887,7 +10887,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 5205
+    "id": 5242
   },
   {
     "name": "Ochado",
@@ -10905,7 +10905,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 5221
+    "id": 5258
   },
   {
     "name": "Ochado",
@@ -10923,7 +10923,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 5222
+    "id": 5259
   },
   {
     "name": "Ochado",
@@ -10941,7 +10941,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 5223
+    "id": 5260
   },
   {
     "name": "Overdose Coffee",
@@ -10959,7 +10959,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 5226
+    "id": 5263
   },
   {
     "name": "REVEL by Confex",
@@ -10977,7 +10977,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 5235
+    "id": 5272
   },
   {
     "name": "Samz de Cafe",
@@ -10995,7 +10995,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 5238
+    "id": 5275
   },
   {
     "name": "Sibs",
@@ -11013,7 +11013,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 5243
+    "id": 5280
   },
   {
     "name": "Sip & Bite",
@@ -11031,7 +11031,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 5245
+    "id": 5282
   },
   {
     "name": "TeaGether",
@@ -11049,7 +11049,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 5255
+    "id": 5293
   },
   {
     "name": "UCC Café Terrace",
@@ -11067,7 +11067,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 5264
+    "id": 5302
   },
   {
     "name": "Uncle Brew",
@@ -11085,7 +11085,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 5276
+    "id": 5314
   },
   {
     "name": "Uncle Brew",
@@ -11103,7 +11103,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 5277
+    "id": 5315
   },
   {
     "name": "VaniTea",
@@ -11121,7 +11121,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 5279
+    "id": 5317
   },
   {
     "name": "Vera Coffee & Bistro",
@@ -11139,7 +11139,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 5281
+    "id": 5319
   },
   {
     "name": "7 Eleven",
@@ -11157,7 +11157,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 5292
+    "id": 5330
   },
   {
     "name": "Ah Iyoh Bistro",
@@ -11175,7 +11175,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 5297
+    "id": 5335
   },
   {
     "name": "Blooming Days",
@@ -11193,7 +11193,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 5316
+    "id": 5354
   },
   {
     "name": "Cafe Gervacios",
@@ -11211,7 +11211,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 5329
+    "id": 5367
   },
   {
     "name": "Cafe Vienna",
@@ -11229,7 +11229,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 5343
+    "id": 5381
   },
   {
     "name": "Cecil's Cafe",
@@ -11247,7 +11247,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 5347
+    "id": 5385
   },
   {
     "name": "Coffee Co",
@@ -11265,7 +11265,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 5358
+    "id": 5397
   },
   {
     "name": "D's Lounge Cafe",
@@ -11283,7 +11283,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 5370
+    "id": 5409
   },
   {
     "name": "Espresson",
@@ -11301,7 +11301,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 5379
+    "id": 5418
   },
   {
     "name": "FLOURY CAFE",
@@ -11319,7 +11319,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 5381
+    "id": 5420
   },
   {
     "name": "Good Days",
@@ -11337,7 +11337,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 5386
+    "id": 5425
   },
   {
     "name": "Happy Lemon",
@@ -11355,7 +11355,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 5396
+    "id": 5435
   },
   {
     "name": "Hideout Cafe",
@@ -11373,7 +11373,7 @@
     "outdoor_seating": "yes",
     "parking": null,
     "wheelchair": null,
-    "id": 5397
+    "id": 5437
   },
   {
     "name": "His Her Cafe",
@@ -11391,7 +11391,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 5398
+    "id": 5438
   },
   {
     "name": "Jaeger's Cafe",
@@ -11409,7 +11409,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 5403
+    "id": 5443
   },
   {
     "name": "Kawaii Cafe",
@@ -11427,7 +11427,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 5412
+    "id": 5453
   },
   {
     "name": "Keopi @38",
@@ -11445,7 +11445,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 5414
+    "id": 5455
   },
   {
     "name": "Kleenest Cafe",
@@ -11463,7 +11463,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 5415
+    "id": 5456
   },
   {
     "name": "Kyrre",
@@ -11481,7 +11481,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 5423
+    "id": 5464
   },
   {
     "name": "Lounge Cafe",
@@ -11499,7 +11499,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 5430
+    "id": 5471
   },
   {
     "name": "Melish Milk Tea",
@@ -11517,7 +11517,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 5436
+    "id": 5477
   },
   {
     "name": "MyCoffee Time Bistro",
@@ -11535,7 +11535,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 5444
+    "id": 5485
   },
   {
     "name": "Overflow",
@@ -11553,7 +11553,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 5452
+    "id": 5493
   },
   {
     "name": "Sanbelo's",
@@ -11571,7 +11571,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 5468
+    "id": 5509
   },
   {
     "name": "Sean's SUPERMIX",
@@ -11589,7 +11589,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 5471
+    "id": 5512
   },
   {
     "name": "Sikwatehan sa Dalan",
@@ -11607,7 +11607,7 @@
     "outdoor_seating": "yes",
     "parking": null,
     "wheelchair": null,
-    "id": 5475
+    "id": 5516
   },
   {
     "name": "Soleil Cafe",
@@ -11625,7 +11625,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 5478
+    "id": 5519
   },
   {
     "name": "Street Dose Cafe",
@@ -11643,7 +11643,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 5481
+    "id": 5522
   },
   {
     "name": "Tiger Sugar",
@@ -11661,7 +11661,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 5503
+    "id": 5546
   },
   {
     "name": "Apex Cafe",
@@ -11679,7 +11679,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 5526
+    "id": 5569
   },
   {
     "name": "BeansTalk",
@@ -11697,7 +11697,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": "yes",
-    "id": 5529
+    "id": 5572
   },
   {
     "name": "ChristianiTea",
@@ -11715,7 +11715,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 5541
+    "id": 5584
   },
   {
     "name": "Cup Sawi",
@@ -11733,7 +11733,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 5545
+    "id": 5588
   },
   {
     "name": "Delicake Cafe",
@@ -11751,7 +11751,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 5547
+    "id": 5590
   },
   {
     "name": "Himaya Kakaw Bar",
@@ -11769,7 +11769,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 5557
+    "id": 5600
   },
   {
     "name": "J.A.S. Caffeinated",
@@ -11787,7 +11787,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 5563
+    "id": 5606
   },
   {
     "name": "Life Cycle Coffee",
@@ -11805,7 +11805,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 5572
+    "id": 5615
   },
   {
     "name": "Rui Cars and Coffee",
@@ -11823,7 +11823,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 5587
+    "id": 5630
   },
   {
     "name": "Sprouts Bloom Cafe",
@@ -11841,7 +11841,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 5592
+    "id": 5636
   },
   {
     "name": "The Purrfect Brew",
@@ -11859,7 +11859,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 5598
+    "id": 5643
   },
   {
     "name": "Warehouse Cafe",
@@ -11877,7 +11877,7 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 5605
+    "id": 5650
   },
   {
     "name": "Yoshino Bibingka",
@@ -11895,6 +11895,6 @@
     "outdoor_seating": null,
     "parking": null,
     "wheelchair": null,
-    "id": 5606
+    "id": 5651
   }
 ]
